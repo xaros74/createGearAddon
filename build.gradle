@@ -22,7 +22,7 @@ mixin {
     add sourceSets.main, "creategearaddon.refmap.json"
 }
 
-version = '${mod_version}'
+version = "v${mod_version}"
 group = 'com.xaros74.creategearaddon' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'creategearaddon'
 
@@ -146,7 +146,7 @@ jar {
             "Specification-Vendor": "xaros74",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
-            "Implementation-Version": "${mod_version}",
+            "Implementation-Version": "${version}",
             "Implementation-Vendor" :"xaros74",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
