@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SDS",
+    "DCD",
+    "SDS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:dark_oak_button"
+    },
+    "C": {
+      "item": "create:andesite_alloy"
+    },
+    "D": {
+      "item": "minecraft:dark_oak_planks"
+    }
+  },
+  "result": {
+    "item": "creategearaddon:large_dark_oak_cogwheel",
+    "count": 2
+  }
+}
