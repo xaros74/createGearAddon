@@ -9,6 +9,7 @@ import com.xaros74.creategearaddon.groups.GearAddon;
 import com.xaros74.creategearaddon.index.AllModBlocks;
 import com.xaros74.creategearaddon.index.AllModItems;
 import com.xaros74.creategearaddon.index.AllModTileEntities;
+import com.xaros74.creategearaddon.ponder.Ponder;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -39,7 +40,7 @@ public class CreateGearAddon {
 	}
 
 	private void doClientStuff(final FMLClientSetupEvent event) {
-		// event.enqueueWork(TestPonder::register);
+		event.enqueueWork(Ponder::register);
 	}
 
 	@SuppressWarnings("deprecation")
