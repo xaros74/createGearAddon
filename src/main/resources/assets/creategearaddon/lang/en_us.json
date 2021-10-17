@@ -6,6 +6,16 @@
 	"block.creategearaddon.dark_oak_cogwheel": "Dark oak cogwheel",
 	"block.creategearaddon.crimson_cogwheel": "Crimson cogwheel",
 	"block.creategearaddon.warped_cogwheel": "Warped cogwheel",
+
+	"item.creategearaddon.incomplete_oak_cogwheel": "Incomplete oak cogwheel",
+	"item.creategearaddon.incomplete_birch_cogwheel": "Incomplete birch cogwheel",
+	"item.creategearaddon.incomplete_jungle_cogwheel": "Incomplete jungle cogwheel",
+	"item.creategearaddon.incomplete_acacia_cogwheel": "Incomplete acacia cogwheel",
+	"item.creategearaddon.incomplete_dark_oak_cogwheel": "Incomplete dark oak cogwheel",
+	"item.creategearaddon.incomplete_crimson_cogwheel": "Incomplete crimson cogwheel",
+	"item.creategearaddon.incomplete_warped_cogwheel": "Incomplete warped cogwheel",
+
+
 	"block.creategearaddon.large_oak_cogwheel": "Large oak cogwheel",
 	"block.creategearaddon.large_birch_cogwheel": "Large birch cogwheel",
 	"block.creategearaddon.large_jungle_cogwheel": "Large jungle cogwheel",
