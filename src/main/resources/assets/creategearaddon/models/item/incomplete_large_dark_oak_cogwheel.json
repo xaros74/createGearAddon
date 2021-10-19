@@ -6,7 +6,7 @@
 		"0": "create:block/axis",
 		"3": "create:block/axis_top",
 		"4": "creategearaddon:block/large_dark_oak_cogwheel",
-		"particle": "block/stripped_dark_oak_log"
+		"particle": "block/dark_oak_planks"
 	},
 	"elements": [
 		{
