@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "creategearaddon:crimson_cogwheel"
+    }
+  ],
+  "result": {
+    "item": "creategearaddon:shaftless_crimson_cogwheel"
+  }
+}
