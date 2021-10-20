@@ -11,7 +11,7 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorldReader;
 
-public class ShaftlessCogWheel extends AddonCogWheel implements ShapeUtil{
+public class ShaftlessCogWheel extends CogWheel implements ShapeUtil{
 	private final VoxelShape SMALL_SHAFTLESS_COGWHEEL_SHAPE = cuboid(2, 6, 2, 14, 10, 14),
 			LARGE_SHAFTLESS_COGWHEEL_SHAPE = cuboid(0, 6, 0, 16, 10, 16);
 	private final VoxelShaper SMALL_SHAFTLESS_COGWHEEL = shape(SMALL_SHAFTLESS_COGWHEEL_SHAPE).forAxis(),

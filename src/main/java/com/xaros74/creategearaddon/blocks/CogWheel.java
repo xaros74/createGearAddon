@@ -7,9 +7,9 @@ import net.minecraft.block.BlockState;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockReader;
 
-public class AddonCogWheel extends CogWheelBlock {
+public class CogWheel extends CogWheelBlock {
 
-	public AddonCogWheel(boolean large, Properties properties) {
+	public CogWheel(boolean large, Properties properties) {
 		super(large, properties);
 	}
 

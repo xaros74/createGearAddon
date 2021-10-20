@@ -15,7 +15,7 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorldReader;
 
-public class HalfShaftCogWheel extends AddonCogWheel implements ShapeUtil{
+public class HalfShaftCogWheel extends CogWheel implements ShapeUtil{
 	private final VoxelShape SMALL_HALF_SHAFT_COGWHEEL_SHAPE = cuboid(2, 6, 2, 14, 10, 14),
 			LARGE_HALF_SHAFT_COGWHEEL_SHAPE = cuboid(0, 6, 0, 16, 10, 16);
 
