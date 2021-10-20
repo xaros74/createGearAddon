@@ -1,7 +1,7 @@
 package com.xaros74.creategearaddon.blocks;
 
-import com.simibubi.create.AllShapes.Builder;
 import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.xaros74.creategearaddon.util.ShapeUtil;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -15,12 +15,12 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorldReader;
 
-public class HalfShaftCogWheel extends AddonCogWheel {
-	private static final VoxelShape SMALL_GEAR_SHAPE = cuboid(2, 6, 2, 14, 10, 14),
-			LARGE_GEAR_SHAPE = cuboid(0, 6, 0, 16, 10, 16);
+public class HalfShaftCogWheel extends AddonCogWheel implements ShapeUtil{
+	private final VoxelShape SMALL_HALF_SHAFT_COGWHEEL_SHAPE = cuboid(2, 6, 2, 14, 10, 14),
+			LARGE_HALF_SHAFT_COGWHEEL_SHAPE = cuboid(0, 6, 0, 16, 10, 16);
 
-	public static final VoxelShaper SMALL_GEAR = shape(SMALL_GEAR_SHAPE).add(5, 6, 5, 11, 16, 11).forDirectional(),
-			LARGE_GEAR = shape(LARGE_GEAR_SHAPE).add(5, 6, 5, 11, 16, 11).forDirectional();
+	private final VoxelShaper SMALL_HALF_SHAFT_COGWHEEL = shape(SMALL_HALF_SHAFT_COGWHEEL_SHAPE).add(5, 6, 5, 11, 16, 11).forDirectional(),
+			LARGE_HALF_SHAFT_COGWHEEL = shape(LARGE_HALF_SHAFT_COGWHEEL_SHAPE).add(5, 6, 5, 11, 16, 11).forDirectional();
 
 	public static final BooleanProperty AXIS_DIRECTION = BooleanProperty.create("axis_direction");
 
@@ -30,19 +30,11 @@ public class HalfShaftCogWheel extends AddonCogWheel {
 				axisDirectionToBool(Direction.AxisDirection.POSITIVE)));
 	}
 
-	private static Builder shape(VoxelShape shape) {
-		return new Builder(shape);
-	}
-
-	private static VoxelShape cuboid(double x1, double y1, double z1, double x2, double y2, double z2) {
-		return Block.box(x1, y1, z1, x2, y2, z2);
-	}
-
 	@Override
 	public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
 		Direction dir = Direction.fromAxisAndDirection(state.getValue(AXIS),
 				boolToAxisDirection(state.getValue(AXIS_DIRECTION)));
-		return isLargeCog() ? LARGE_GEAR.get(dir) : SMALL_GEAR.get(dir);
+		return isLargeCog() ? LARGE_HALF_SHAFT_COGWHEEL.get(dir) : SMALL_HALF_SHAFT_COGWHEEL.get(dir);
 	}
 
 	public static boolean axisDirectionToBool(Direction.AxisDirection dir) {
