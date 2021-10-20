@@ -26,6 +26,13 @@ This is a simple mod that add gears with textures colors from vanilla wood.
     side="BOTH"
 
 [[dependencies.creategearaddon]]
+    modId="creategears"
+    mandatory=false
+    versionRange="[mc1.16.5-1.3.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.creategearaddon]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5,1.17)"

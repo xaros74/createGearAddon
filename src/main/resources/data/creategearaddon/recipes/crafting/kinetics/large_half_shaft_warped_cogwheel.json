@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"DCD",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "minecraft:warped_button"
+		},
+		"C": {
+			"item": "minecraft:andesite"
+		},
+		"D": {
+			"item": "minecraft:warped_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_half_shaft_warped_cogwheel",
+		"count": 2
+	}
+}
