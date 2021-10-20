@@ -67,6 +67,65 @@ public class AllModItems {
 	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_LARGE_WARPED_COGWHEEL = REGISTRATE
 			.item("incomplete_large_warped_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
 			.register();
+	
+	// **************************half shaft cogwheels**************************
+	
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_HALF_SHAFT_OAK_COGWHEEL = REGISTRATE
+			.item("incomplete_half_shaft_oak_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_HALF_SHAFT_BIRCH_COGWHEEL = REGISTRATE
+			.item("incomplete_half_shaft_birch_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_HALF_SHAFT_JUNGLE_COGWHEEL = REGISTRATE
+			.item("incomplete_half_shaft_jungle_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_HALF_SHAFT_ACACIA_COGWHEEL = REGISTRATE
+			.item("incomplete_half_shaft_acacia_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_HALF_SHAFT_DARK_OAK_COGWHEEL = REGISTRATE
+			.item("incomplete_half_shaft_dark_oak_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_HALF_SHAFT_CRIMSON_COGWHEEL = REGISTRATE
+			.item("incomplete_half_shaft_crimson_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_HALF_SHAFT_WARPED_COGWHEEL = REGISTRATE
+			.item("incomplete_half_shaft_warped_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	// **************************large half shaft cogwheels**************************
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_LARGE_HALF_SHAFT_OAK_COGWHEEL = REGISTRATE
+			.item("incomplete_large_half_shaft_oak_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_LARGE_HALF_SHAFT_BIRCH_COGWHEEL = REGISTRATE
+			.item("incomplete_large_half_shaft_birch_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_LARGE_HALF_SHAFT_JUNGLE_COGWHEEL = REGISTRATE
+			.item("incomplete_large_half_shaft_jungle_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_LARGE_HALF_SHAFT_ACACIA_COGWHEEL = REGISTRATE
+			.item("incomplete_large_half_shaft_acacia_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_LARGE_HALF_SHAFT_DARK_OAK_COGWHEEL = REGISTRATE
+			.item("incomplete_large_half_shaft_dark_oak_cogwheel", SequencedAssemblyItem::new)
+			.model(AssetLookup.existingItemModel()).register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_LARGE_HALF_SHAFT_CRIMSON_COGWHEEL = REGISTRATE
+			.item("incomplete_large_half_shaft_crimson_cogwheel", SequencedAssemblyItem::new)
+			.model(AssetLookup.existingItemModel()).register();
+
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_LARGE_HALF_SHAFT_WARPED_COGWHEEL = REGISTRATE
+			.item("incomplete_large_half_shaft_warped_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
 
 	public static void register() {
 		REGISTRATE.addToSection(INCOMPLETE_OAK_COGWHEEL, AllSections.MATERIALS);
@@ -84,6 +143,22 @@ public class AllModItems {
 		REGISTRATE.addToSection(INCOMPLETE_LARGE_DARK_OAK_COGWHEEL, AllSections.MATERIALS);
 		REGISTRATE.addToSection(INCOMPLETE_LARGE_CRIMSON_COGWHEEL, AllSections.MATERIALS);
 		REGISTRATE.addToSection(INCOMPLETE_LARGE_WARPED_COGWHEEL, AllSections.MATERIALS);
+		
+		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_OAK_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_BIRCH_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_JUNGLE_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_ACACIA_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_DARK_OAK_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_CRIMSON_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_WARPED_COGWHEEL, AllSections.MATERIALS);
+
+		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_OAK_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_BIRCH_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_JUNGLE_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_ACACIA_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_DARK_OAK_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_CRIMSON_COGWHEEL, AllSections.MATERIALS);
+		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_WARPED_COGWHEEL, AllSections.MATERIALS);
 	}
 
 }

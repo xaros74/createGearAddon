@@ -23,6 +23,15 @@
 	"block.creategearaddon.half_shaft_crimson_cogwheel": "Half shaft crimson cogwheel",
 	"block.creategearaddon.half_shaft_warped_cogwheel": "Half shaft warped cogwheel",
 
+	"item.creategearaddon.incomplete_half_shaft_oak_cogwheel": "Incomplete half shaft oak cogwheel",
+	"item.creategearaddon.incomplete_half_shaft_birch_cogwheel": "Incomplete half shaft birch cogwheel",
+	"item.creategearaddon.incomplete_half_shaft_jungle_cogwheel": "Incomplete half shaft jungle cogwheel",
+	"item.creategearaddon.incomplete_half_shaft_acacia_cogwheel": "Incomplete half shaft acacia cogwheel",
+	"item.creategearaddon.incomplete_half_shaft_dark_oak_cogwheel": "Incomplete half shaft dark oak cogwheel",
+	"item.creategearaddon.incomplete_half_shaft_crimson_cogwheel": "Incomplete half shaft crimson cogwheel",
+	"item.creategearaddon.incomplete_half_shaft_warped_cogwheel": "Incomplete half shaft warped cogwheel",
+
+
 
 	"block.creategearaddon.large_oak_cogwheel": "Large oak cogwheel",
 	"block.creategearaddon.large_birch_cogwheel": "Large birch cogwheel",
@@ -47,6 +56,14 @@
 	"block.creategearaddon.large_half_shaft_dark_oak_cogwheel": "Large half shaft dark oak cogwheel",
 	"block.creategearaddon.large_half_shaft_crimson_cogwheel": "Large half shaft crimson cogwheel",
 	"block.creategearaddon.large_half_shaft_warped_cogwheel": "Large half shaft warped cogwheel",
+
+	"item.creategearaddon.incomplete_large_half_shaft_oak_cogwheel": "Incomplete half shaft large oak cogwheel",
+	"item.creategearaddon.incomplete_large_half_shaft_birch_cogwheel": "Incomplete half shaft large birch cogwheel",
+	"item.creategearaddon.incomplete_large_half_shaft_jungle_cogwheel": "Incomplete half shaft large jungle cogwheel",
+	"item.creategearaddon.incomplete_large_half_shaft_acacia_cogwheel": "Incomplete half shaft large acacia cogwheel",
+	"item.creategearaddon.incomplete_large_half_shaft_dark_oak_cogwheel": "Incomplete half shaft large dark oak cogwheel",
+	"item.creategearaddon.incomplete_large_half_shaft_crimson_cogwheel": "Incomplete half shaft large crimson cogwheel",
+	"item.creategearaddon.incomplete_large_half_shaft_warped_cogwheel": "Incomplete half shaft large warped cogwheel",
 	
 	"itemGroup.creategearaddon.gear_addon_group": "Gear addon",
 	
