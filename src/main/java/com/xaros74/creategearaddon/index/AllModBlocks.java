@@ -212,7 +212,7 @@ public class AllModBlocks {
 				.build().register();
 
 		public static final BlockEntry<HalfShaftCogWheel> LARGE_HALF_SHAFT_DARK_OAK_COGWHEEL = REGISTRATE
-				.block("large_half_shaft_dark_oak_cogwheel", (p) -> new HalfShaftCogWheel(false, p))
+				.block("large_half_shaft_dark_oak_cogwheel", (p) -> new HalfShaftCogWheel(true, p))
 				.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
 				.properties(p -> p.sound(SoundType.WOOD)).blockstate(AllModBlocks::halfShaftGearState)
 				.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
