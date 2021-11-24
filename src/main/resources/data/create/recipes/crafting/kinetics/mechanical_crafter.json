@@ -16,7 +16,7 @@
       "item": "create:brass_casing"
     },
     "S": {
-      "tag": "creategearaddon:cogwheels"
+      "tag": "forge:cogwheels"
     }
   },
   "result": {

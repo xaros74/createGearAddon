@@ -13,7 +13,7 @@
       "item": "create:andesite_alloy"
     },
     "C": {
-      "tag": "creategearaddon:cogwheels"
+      "tag": "forge:cogwheels"
     },
     "I": {
       "tag": "forge:stone"

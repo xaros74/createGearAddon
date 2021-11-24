@@ -16,7 +16,7 @@
       "tag": "minecraft:logs"
     },
     "P": {
-      "tag": "creategearaddon:cogwheels"
+      "tag": "forge:cogwheels"
     }
   },
   "result": {

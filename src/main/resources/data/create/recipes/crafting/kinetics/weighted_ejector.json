@@ -13,7 +13,7 @@
       "item": "create:depot"
     },
     "I": {
-      "tag": "creategearaddon:cogwheels"
+      "tag": "forge:cogwheels"
     }
   },
   "result": {
