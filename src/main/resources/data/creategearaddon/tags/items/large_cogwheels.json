@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "creategearaddon:large_oak_cogwheel",
+    "create:large_cogwheel",
+    "creategearaddon:large_birch_cogwheel",
+    "creategearaddon:large_jungle_cogwheel",
+    "creategearaddon:large_acacia_cogwheel",
+    "creategearaddon:large_dark_oak_cogwheel",
+    "creategearaddon:large_crimson_cogwheel",
+    "creategearaddon:large_warped_cogwheel"
+  ]
+}
