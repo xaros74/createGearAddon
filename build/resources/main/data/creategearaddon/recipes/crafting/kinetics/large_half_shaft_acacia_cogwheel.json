@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"DCD",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "minecraft:acacia_button"
+		},
+		"C": {
+			"item": "minecraft:andesite"
+		},
+		"D": {
+			"item": "minecraft:acacia_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_half_shaft_acacia_cogwheel",
+		"count": 2
+	}
+}

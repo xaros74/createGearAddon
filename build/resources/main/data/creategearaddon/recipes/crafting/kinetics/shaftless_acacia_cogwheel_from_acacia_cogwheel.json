@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "creategearaddon:acacia_cogwheel"
+    }
+  ],
+  "result": {
+    "item": "creategearaddon:shaftless_acacia_cogwheel"
+  }
+}

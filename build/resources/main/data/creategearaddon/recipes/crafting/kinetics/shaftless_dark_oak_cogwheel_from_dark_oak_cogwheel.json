@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "creategearaddon:dark_oak_cogwheel"
+    }
+  ],
+  "result": {
+    "item": "creategearaddon:shaftless_dark_oak_cogwheel"
+  }
+}
