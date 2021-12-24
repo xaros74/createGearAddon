@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"D D",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "biomesoplenty:fir_button"
+		},
+		"D": {
+			"item": "biomesoplenty:fir_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_shaftless_fir_cogwheel",
+		"count": 2
+	}
+}

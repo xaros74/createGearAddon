@@ -1,13 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "creategearaddon:large_shaftless_birch_cogwheel"
-    },
-    {
-      "item": "create:andesite_alloy"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A",
+    "C",
+    "A"
   ],
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "creategearaddon:large_shaftless_birch_cogwheel"
+    }
+  },
   "result": {
     "item": "creategearaddon:large_birch_cogwheel"
   }

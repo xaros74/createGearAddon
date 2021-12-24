@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"DCD",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "biomesoplenty:redwood_button"
+		},
+		"C": {
+			"item": "minecraft:andesite"
+		},
+		"D": {
+			"item": "biomesoplenty:redwood_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_half_shaft_redwood_cogwheel",
+		"count": 2
+	}
+}

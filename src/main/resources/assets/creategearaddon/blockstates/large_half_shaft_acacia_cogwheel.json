@@ -5,22 +5,22 @@
       "x": 90,
       "y": 270
     },
-    "axis=y,axis_direction=false": {
-      "model": "creategearaddon:block/large_half_shaft_acacia_cogwheel",
-      "x": 180
-    },
-    "axis=z,axis_direction=false": {
-      "model": "creategearaddon:block/large_half_shaft_acacia_cogwheel",
-      "x": 90,
-      "y": 360
-    },
     "axis=x,axis_direction=true": {
       "model": "creategearaddon:block/large_half_shaft_acacia_cogwheel",
       "x": 90,
       "y": 90
     },
+    "axis=y,axis_direction=false": {
+      "model": "creategearaddon:block/large_half_shaft_acacia_cogwheel",
+      "x": 180
+    },
     "axis=y,axis_direction=true": {
       "model": "creategearaddon:block/large_half_shaft_acacia_cogwheel"
+    },
+    "axis=z,axis_direction=false": {
+      "model": "creategearaddon:block/large_half_shaft_acacia_cogwheel",
+      "x": 90,
+      "y": 360
     },
     "axis=z,axis_direction=true": {
       "model": "creategearaddon:block/large_half_shaft_acacia_cogwheel",

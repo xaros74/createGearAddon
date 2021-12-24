@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"DCD",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "biomesoplenty:dead_button"
+		},
+		"C": {
+			"item": "minecraft:andesite"
+		},
+		"D": {
+			"item": "biomesoplenty:dead_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_half_shaft_dead_cogwheel",
+		"count": 2
+	}
+}

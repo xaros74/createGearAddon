@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"DCD",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "biomesoplenty:willow_button"
+		},
+		"C": {
+			"item": "minecraft:andesite"
+		},
+		"D": {
+			"item": "biomesoplenty:willow_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_half_shaft_willow_cogwheel",
+		"count": 2
+	}
+}

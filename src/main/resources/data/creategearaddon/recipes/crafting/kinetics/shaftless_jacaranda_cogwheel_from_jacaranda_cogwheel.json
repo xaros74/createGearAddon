@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "creategearaddon:jacaranda_cogwheel"
+    }
+  ],
+  "result": {
+    "item": "creategearaddon:shaftless_jacaranda_cogwheel"
+  }
+}

@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SSS",
+		"S S",
+		"SSS"
+	],
+	"key": {
+		"S": {
+			"item": "biomesoplenty:dead_button"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:shaftless_dead_cogwheel",
+		"count": 8.0
+	}
+}

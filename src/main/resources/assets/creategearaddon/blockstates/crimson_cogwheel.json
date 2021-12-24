@@ -2,13 +2,13 @@
   "variants": {
     "axis=x": {
       "model": "creategearaddon:block/crimson_cogwheel",
-      "x": 90,  
-      "y": 90   
-    },          
-    "axis=y": { 
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "creategearaddon:block/crimson_cogwheel"
-    },          
-    "axis=z": { 
+    },
+    "axis=z": {
       "model": "creategearaddon:block/crimson_cogwheel",
       "x": 90,
       "y": 180

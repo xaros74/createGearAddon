@@ -2,13 +2,13 @@
   "variants": {
     "axis=x": {
       "model": "creategearaddon:block/birch_cogwheel",
-      "x": 90,  
-      "y": 90   
-    },          
-    "axis=y": { 
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "creategearaddon:block/birch_cogwheel"
-    },          
-    "axis=z": { 
+    },
+    "axis=z": {
       "model": "creategearaddon:block/birch_cogwheel",
       "x": 90,
       "y": 180

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A",
+    "C",
+    "A"
+  ],
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "creategearaddon:shaftless_cherry_cogwheel"
+    }
+  },
+  "result": {
+    "item": "creategearaddon:cherry_cogwheel"
+  }
+}

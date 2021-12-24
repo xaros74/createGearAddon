@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A",
+    "C",
+    "A"
+  ],
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "creategearaddon:large_shaftless_fir_cogwheel"
+    }
+  },
+  "result": {
+    "item": "creategearaddon:large_fir_cogwheel"
+  }
+}
