@@ -1,0 +1,103 @@
+{
+	"block.creategearaddon.oak_cogwheel": "Engranaje pequeño de roble",
+	"block.creategearaddon.birch_cogwheel": "Engranaje pequeño de abedul",
+	"block.creategearaddon.jungle_cogwheel": "Engranaje pequeño de jungla",
+	"block.creategearaddon.acacia_cogwheel": "Engranaje pequeño de acacia",
+	"block.creategearaddon.dark_oak_cogwheel": "Engranaje pequeño de roble oscuro",
+	"block.creategearaddon.crimson_cogwheel": "Engranaje pequeño carmesí",
+	"block.creategearaddon.warped_cogwheel": "Engranaje pequeño distorsionado",
+
+	"item.creategearaddon.incomplete_oak_cogwheel": "Engranaje pequeño incompleto de roble",
+	"item.creategearaddon.incomplete_birch_cogwheel": "Engranaje pequeño incompleto de abedul",
+	"item.creategearaddon.incomplete_jungle_cogwheel": "Engranaje pequeño incompleto de jungla",
+	"item.creategearaddon.incomplete_acacia_cogwheel": "Engranaje pequeño incompleto de acacia",
+	"item.creategearaddon.incomplete_dark_oak_cogwheel": "Engranaje pequeño incompleto de roble oscuro",
+	"item.creategearaddon.incomplete_crimson_cogwheel": "Engranaje pequeño incompleto carmesí",
+	"item.creategearaddon.incomplete_warped_cogwheel": "Engranaje pequeño incompleto distorsionado",
+
+	"block.creategearaddon.half_shaft_oak_cogwheel": "Engranaje pequeño de medio eje de roble",
+	"block.creategearaddon.half_shaft_birch_cogwheel": "Engranaje pequeño de medio eje de abedul",
+	"block.creategearaddon.half_shaft_jungle_cogwheel": "Engranaje pequeño de medio eje de jungla",
+	"block.creategearaddon.half_shaft_acacia_cogwheel": "Engranaje pequeño de medio eje de acacia",
+	"block.creategearaddon.half_shaft_dark_oak_cogwheel": "Engranaje pequeño de medio eje de roble oscuro",
+	"block.creategearaddon.half_shaft_crimson_cogwheel": "Engranaje pequeño de medio eje carmesí",
+	"block.creategearaddon.half_shaft_warped_cogwheel": "Engranaje pequeño de medio eje distorsionado",
+
+	"item.creategearaddon.incomplete_half_shaft_oak_cogwheel": "Engranaje pequeño de medio eje incompleto de roble",
+	"item.creategearaddon.incomplete_half_shaft_birch_cogwheel": "Engranaje pequeño de medio eje incompleto de abedul",
+	"item.creategearaddon.incomplete_half_shaft_jungle_cogwheel": "Engranaje pequeño de medio eje incompleto de jungla",
+	"item.creategearaddon.incomplete_half_shaft_acacia_cogwheel": "Engranaje pequeño de medio eje incompleto de acacia",
+	"item.creategearaddon.incomplete_half_shaft_dark_oak_cogwheel": "Engranaje pequeño de medio eje incompleto de roble oscuro",
+	"item.creategearaddon.incomplete_half_shaft_crimson_cogwheel": "Engranaje pequeño de medio eje incompleto carmesí",
+	"item.creategearaddon.incomplete_half_shaft_warped_cogwheel": "Engranaje pequeño de medio eje incompleto distorsionado",
+
+	"block.creategearaddon.shaftless_oak_cogwheel": "Engranaje pequeño sin eje de roble",
+	"block.creategearaddon.shaftless_birch_cogwheel": "Engranaje pequeño sin eje de abedul",
+	"block.creategearaddon.shaftless_jungle_cogwheel": "Engranaje pequeño sin eje de jungla",
+	"block.creategearaddon.shaftless_acacia_cogwheel": "Engranaje pequeño sin eje de acacia",
+	"block.creategearaddon.shaftless_dark_oak_cogwheel": "Engranaje pequeño sin eje de roble oscuro",
+	"block.creategearaddon.shaftless_crimson_cogwheel": "Engranaje pequeño sin eje carmesí",
+	"block.creategearaddon.shaftless_warped_cogwheel": "Engranaje pequeño sin eje distorsionado",
+
+
+
+	"block.creategearaddon.large_oak_cogwheel": "Engranaje grande de roble",
+	"block.creategearaddon.large_birch_cogwheel": "Engranaje grande de abedul",
+	"block.creategearaddon.large_jungle_cogwheel": "Engranaje grande de jungla",
+	"block.creategearaddon.large_acacia_cogwheel": "Engranaje grande de acacia",
+	"block.creategearaddon.large_dark_oak_cogwheel": "Engranaje grande de roble oscuro",
+	"block.creategearaddon.large_crimson_cogwheel": "Engranaje grande carmesí",
+	"block.creategearaddon.large_warped_cogwheel": "Engranaje grande distorsionado",
+	
+	"item.creategearaddon.incomplete_large_oak_cogwheel": "Engranaje grande incompleto de roble",
+	"item.creategearaddon.incomplete_large_birch_cogwheel": "Engranaje grande incompleto de abedul",
+	"item.creategearaddon.incomplete_large_jungle_cogwheel": "Engranaje grande incompleto de jungla",
+	"item.creategearaddon.incomplete_large_acacia_cogwheel": "Engranaje grande incompleto de acacia",
+	"item.creategearaddon.incomplete_large_dark_oak_cogwheel": "Engranaje grande incompleto de roble oscuro",
+	"item.creategearaddon.incomplete_large_crimson_cogwheel": "Engranaje grande incompleto carmesí",
+	"item.creategearaddon.incomplete_large_warped_cogwheel": "Engranaje grande incompleto distorsionado",
+
+	"block.creategearaddon.large_half_shaft_oak_cogwheel": "Engranaje grande de medio eje de roble",
+	"block.creategearaddon.large_half_shaft_birch_cogwheel": "Engranaje grande de medio eje de abedul",
+	"block.creategearaddon.large_half_shaft_jungle_cogwheel": "Engranaje grande de medio eje de jungla",
+	"block.creategearaddon.large_half_shaft_acacia_cogwheel": "Engranaje grande de medio eje de acacia",
+	"block.creategearaddon.large_half_shaft_dark_oak_cogwheel": "Engranaje grande de medio eje de roble oscuro",
+	"block.creategearaddon.large_half_shaft_crimson_cogwheel": "Engranaje grande de medio eje carmesí",
+	"block.creategearaddon.large_half_shaft_warped_cogwheel": "Engranaje grande de medio eje distorsionado",
+
+	"item.creategearaddon.incomplete_large_half_shaft_oak_cogwheel": "Engranaje grande de medio eje incompleto de roble",
+	"item.creategearaddon.incomplete_large_half_shaft_birch_cogwheel": "Engranaje grande de medio eje incompleto de abedul",
+	"item.creategearaddon.incomplete_large_half_shaft_jungle_cogwheel": "Engranaje grande de medio eje incompleto de jungla",
+	"item.creategearaddon.incomplete_large_half_shaft_acacia_cogwheel": "Engranaje grande de medio eje incompleto de acacia",
+	"item.creategearaddon.incomplete_large_half_shaft_dark_oak_cogwheel": "Engranaje grande de medio eje incompleto de roble oscuro",
+	"item.creategearaddon.incomplete_large_half_shaft_crimson_cogwheel": "Engranaje grande de medio eje incompleto carmesí",
+	"item.creategearaddon.incomplete_large_half_shaft_warped_cogwheel": "Engranaje grande de medio eje incompleto distorsionado",
+
+	"block.creategearaddon.large_shaftless_oak_cogwheel": "Engranaje grande sin eje de roble",
+	"block.creategearaddon.large_shaftless_birch_cogwheel": "Engranaje grande sin eje de abedul",
+	"block.creategearaddon.large_shaftless_jungle_cogwheel": "Engranaje grande sin eje de jungla",
+	"block.creategearaddon.large_shaftless_acacia_cogwheel": "Engranaje grande sin eje de acacia",
+	"block.creategearaddon.large_shaftless_dark_oak_cogwheel": "Engranaje grande sin eje de roble oscuro",
+	"block.creategearaddon.large_shaftless_crimson_cogwheel": "Engranaje grande sin eje carmesí",
+	"block.creategearaddon.large_shaftless_warped_cogwheel": "Engranaje grande sin eje distorsionado",
+	
+	"itemGroup.creategearaddon.gear_addon_group": "Gear addon",
+	
+	"creategearaddon.ponder.cogwheel.header": "Transmisión de la fuerza de rotación mediante engranajes pequeños.",
+	"creategearaddon.ponder.cogwheel.text_1": "Los engranajes transmitirán la rotación a otros engranajes adyacentes.",
+	"creategearaddon.ponder.cogwheel.text_2": "Los ejes vecinos conectados así girarán en direcciones opuestas.",
+
+	"creategearaddon.ponder.cog_speedup.header": "Cambio de marchas con engranajes",
+	"creategearaddon.ponder.cog_speedup.text_1": "Los engranajes grandes y pequeños se pueden conectar en diagonal.",
+	"creategearaddon.ponder.cog_speedup.text_2": "Al cambiar de engranajes grandes a pequeños, la velocidad de rotación se duplicará.",
+	"creategearaddon.ponder.cog_speedup.text_3": "Cambiando a sentido contrario, la velocidad de rotación se reducirá a la mitad.",
+	
+	"creategearaddon.ponder.shared.rpm8": "8 RPM",
+	"creategearaddon.ponder.shared.rpm16": "16 RPM",
+	"creategearaddon.ponder.shared.rpm32": "32 RPM",
+	
+	"creategearaddon.ponder.large_cogwheel.header": "Retransmisión de la fuerza de rotación mediante grandes engranajes.",
+	"creategearaddon.ponder.large_cogwheel.text_1": "Los engranajes grandes se pueden conectar entre sí en ángulo recto.",
+	"creategearaddon.ponder.large_cogwheel.text_2": "Ayudará a transmitir la velocidad de rotación a otros ejes de rotación."
+	
+}
