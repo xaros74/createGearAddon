@@ -2,8 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "A",
-    "C",
-    "A"
+    "C"
   ],
   "key": {
     "A": {
@@ -14,6 +13,6 @@
     }
   },
   "result": {
-    "item": "creategearaddon:shaftless_jungle_cogwheel"
+    "item": "creategearaddon:jungle_cogwheel"
   }
 }

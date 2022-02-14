@@ -2,8 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "A",
-    "C",
-    "A"
+    "C"
   ],
   "key": {
     "A": {
@@ -14,6 +13,6 @@
     }
   },
   "result": {
-    "item": "creategearaddon:large_shaftless_dark_oak_cogwheel"
+    "item": "creategearaddon:large_dark_oak_cogwheel"
   }
 }
