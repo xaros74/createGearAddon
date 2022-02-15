@@ -1,3 +1,0 @@
-All models come from create.
-
-The textures are modified version of the original textures from create.
