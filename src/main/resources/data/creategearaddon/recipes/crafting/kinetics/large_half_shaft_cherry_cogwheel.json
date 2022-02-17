@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"DCD",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "biomesoplenty:cherry_button"
+		},
+		"C": {
+			"item": "minecraft:andesite"
+		},
+		"D": {
+			"item": "biomesoplenty:cherry_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_half_shaft_cherry_cogwheel",
+		"count": 2
+	}
+}

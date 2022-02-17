@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "creategearaddon:block/shaftless_dark_oak_cogwheel",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "creategearaddon:block/shaftless_dark_oak_cogwheel"
+    },
+    "axis=z": {
+      "model": "creategearaddon:block/shaftless_dark_oak_cogwheel",
+      "x": 90,
+      "y": 180
+    }
+  }
+}

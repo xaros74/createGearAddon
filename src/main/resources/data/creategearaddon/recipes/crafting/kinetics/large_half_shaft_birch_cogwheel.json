@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"DCD",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "minecraft:birch_button"
+		},
+		"C": {
+			"item": "minecraft:andesite"
+		},
+		"D": {
+			"item": "minecraft:birch_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_half_shaft_birch_cogwheel",
+		"count": 2
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "creategearaddon:large_warped_cogwheel"
+    }
+  ],
+  "result": {
+    "item": "creategearaddon:large_shaftless_warped_cogwheel"
+  }
+}

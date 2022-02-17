@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "creategearaddon:block/large_shaftless_hellbark_cogwheel",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "creategearaddon:block/large_shaftless_hellbark_cogwheel"
+    },
+    "axis=z": {
+      "model": "creategearaddon:block/large_shaftless_hellbark_cogwheel",
+      "x": 90,
+      "y": 180
+    }
+  }
+}

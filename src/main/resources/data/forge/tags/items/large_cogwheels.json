@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "create:large_cogwheel",
+    "creategearaddon:large_oak_cogwheel",
+    "creategearaddon:large_birch_cogwheel",
+    "creategearaddon:large_jungle_cogwheel",
+    "creategearaddon:large_acacia_cogwheel",
+    "creategearaddon:large_dark_oak_cogwheel",
+    "creategearaddon:large_crimson_cogwheel",
+    "creategearaddon:large_warped_cogwheel",
+    "creategearaddon:large_cherry_cogwheel",
+    "creategearaddon:large_dead_cogwheel",
+    "creategearaddon:large_fir_cogwheel",
+    "creategearaddon:large_hellbark_cogwheel",
+    "creategearaddon:large_jacaranda_cogwheel",
+    "creategearaddon:large_magic_cogwheel",
+    "creategearaddon:large_mahogany_cogwheel",
+    "creategearaddon:large_palm_cogwheel",
+    "creategearaddon:large_redwood_cogwheel",
+    "creategearaddon:large_umbran_cogwheel",
+    "creategearaddon:large_willow_cogwheel"
+  ]
+}

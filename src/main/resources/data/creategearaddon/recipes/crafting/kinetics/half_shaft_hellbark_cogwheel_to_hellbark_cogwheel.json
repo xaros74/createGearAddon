@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "A"
+  ],
+  "key": {
+    "C": {
+      "item": "creategearaddon:half_shaft_hellbark_cogwheel"
+    },
+    "A": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "result": {
+    "item": "creategearaddon:hellbark_cogwheel"
+  }
+}
