@@ -1,4 +1,4 @@
-package com.xaros74.creategearaddon.blocks;
+package com.xaros74.creategearaddon.index;
 import com.jozufozu.flywheel.core.PartialModel;
 import com.xaros74.creategearaddon.CreateGearAddon;
 
@@ -8,12 +8,14 @@ public class AllModBlockPartials {
 			LARGE_SHAFTLESS_OAK_COGWHEEL = block("large_shaftless_oak_cogwheel");
 	
 	
+	
+	
 	private static PartialModel block(String path) {
-		CreateGearAddon.LOGGER.info(path);
 		return new PartialModel(CreateGearAddon.asResource("block/" + path));
 	}
 	
 	public static void init() {
 		// init static fields
+		CreateGearAddon.LOGGER.info("PARTIAL shaftless" + PARTIAL_SHAFTLESS_OAK_COGWHEEL);
 	}
 }

@@ -5,8 +5,8 @@ import org.apache.logging.log4j.Logger;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.repack.registrate.util.NonNullLazyValue;
-import com.xaros74.creategearaddon.blocks.AllModBlockPartials;
 import com.xaros74.creategearaddon.groups.GearAddon;
+import com.xaros74.creategearaddon.index.AllModBlockPartials;
 import com.xaros74.creategearaddon.index.AllModBlocks;
 import com.xaros74.creategearaddon.index.AllModItems;
 import com.xaros74.creategearaddon.index.AllModTileEntities;
@@ -52,6 +52,7 @@ public class CreateGearAddon
     }
     
     private void clientInit() {
+    	LOGGER.info("init block partial");
     	AllModBlockPartials.init();
     }
     

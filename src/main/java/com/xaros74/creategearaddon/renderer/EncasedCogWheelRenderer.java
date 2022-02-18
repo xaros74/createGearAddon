@@ -10,8 +10,8 @@ import com.simibubi.create.foundation.render.CachedBufferer;
 import com.simibubi.create.foundation.render.SuperByteBuffer;
 import com.simibubi.create.foundation.utility.Iterate;
 import com.xaros74.creategearaddon.CreateGearAddon;
-import com.xaros74.creategearaddon.blocks.AllModBlockPartials;
 import com.xaros74.creategearaddon.blocks.EncasedCogwheel;
+import com.xaros74.creategearaddon.index.AllModBlockPartials;
 
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;

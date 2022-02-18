@@ -14,6 +14,7 @@ import com.simibubi.create.content.contraptions.base.KineticTileEntity;
 import com.simibubi.create.content.contraptions.base.flwdata.RotatingData;
 import com.simibubi.create.content.contraptions.relays.encased.EncasedCogInstance;
 import com.simibubi.create.foundation.utility.Iterate;
+import com.xaros74.creategearaddon.index.AllModBlockPartials;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.AxisDirection;
