@@ -3,13 +3,13 @@ package com.xaros74.creategearaddon.blocks;
 import com.simibubi.create.foundation.utility.VoxelShaper;
 import com.xaros74.creategearaddon.util.ShapeUtil;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.util.Direction;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.shapes.ISelectionContext;
-import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.world.IBlockReader;
-import net.minecraft.world.IWorldReader;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class ShaftlessCogWheel extends CogWheel implements ShapeUtil{
 	private final VoxelShape SMALL_SHAFTLESS_COGWHEEL_SHAPE = cuboid(2, 6, 2, 14, 10, 14),
@@ -22,12 +22,12 @@ public class ShaftlessCogWheel extends CogWheel implements ShapeUtil{
 	}
 	
 	@Override
-    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
+    public VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
         return (isLargeCog() ? LARGE_SHAFTLESS_COGWHEEL : SMALL_SHAFTLESS_COGWHEEL).get(state.getValue(AXIS));
     }
 
     @Override
-    public boolean hasShaftTowards(IWorldReader world, BlockPos pos, BlockState state, Direction face) {
+    public boolean hasShaftTowards(LevelReader world, BlockPos pos, BlockState state, Direction face) {
         return false;
     }
 

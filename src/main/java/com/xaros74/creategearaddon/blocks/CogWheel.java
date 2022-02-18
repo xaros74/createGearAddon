@@ -1,11 +1,10 @@
 package com.xaros74.creategearaddon.blocks;
 
 import com.simibubi.create.content.contraptions.relays.elementary.CogWheelBlock;
+import com.simibubi.create.content.contraptions.relays.elementary.SimpleKineticTileEntity;
 import com.xaros74.creategearaddon.index.AllModTileEntities;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.world.IBlockReader;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 
 public class CogWheel extends CogWheelBlock {
 
@@ -14,8 +13,8 @@ public class CogWheel extends CogWheelBlock {
 	}
 
 	@Override
-	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-		return AllModTileEntities.getCOG_TILE().create();
+	public BlockEntityType<? extends SimpleKineticTileEntity> getTileEntityType() {
+		return AllModTileEntities.getCOG_TILE().get();
 	}
 
 }

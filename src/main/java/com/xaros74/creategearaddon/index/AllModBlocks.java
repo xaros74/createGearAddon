@@ -14,19 +14,19 @@ import com.simibubi.create.repack.registrate.providers.RegistrateBlockstateProvi
 import com.simibubi.create.repack.registrate.util.entry.BlockEntry;
 import com.xaros74.creategearaddon.CreateGearAddon;
 import com.xaros74.creategearaddon.blocks.CogWheel;
-import com.xaros74.creategearaddon.blocks.ShaftlessCogWheel;
 import com.xaros74.creategearaddon.blocks.HalfShaftCogWheel;
+import com.xaros74.creategearaddon.blocks.ShaftlessCogWheel;
 import com.xaros74.creategearaddon.groups.GearAddon;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.state.properties.BlockStateProperties;
-import net.minecraft.util.Direction;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 
 public class AllModBlocks {
 	private static final CreateRegistrate REGISTRATE = CreateGearAddon.registrate()
-			.itemGroup(() -> GearAddon.GEAR_ADDON_GROUP);
+			.creativeModeTab(() -> GearAddon.GEAR_ADDON_GROUP);
 
 	// **********************small cogwheels**********************
 

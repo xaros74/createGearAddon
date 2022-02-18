@@ -2,12 +2,12 @@ package com.xaros74.creategearaddon.index;
 
 import com.simibubi.create.content.contraptions.base.KineticTileEntityRenderer;
 import com.simibubi.create.content.contraptions.base.SingleRotatingInstance;
-import com.simibubi.create.repack.registrate.util.entry.TileEntityEntry;
+import com.simibubi.create.repack.registrate.util.entry.BlockEntityEntry;
 import com.xaros74.creategearaddon.CreateGearAddon;
 import com.xaros74.creategearaddon.tiles.CogTile;
 
 public class AllModTileEntities {
-	private static TileEntityEntry<CogTile> COG_TILE;
+	private static BlockEntityEntry<CogTile> COG_TILE;
 
 	public static void register() {
 		COG_TILE = CreateGearAddon.registrate().tileEntity("simple_kinetic", CogTile::new)
@@ -68,7 +68,7 @@ public class AllModTileEntities {
 
 	}
 
-	public static TileEntityEntry<CogTile> getCOG_TILE() {
+	public static BlockEntityEntry<CogTile> getCOG_TILE() {
 		return COG_TILE;
 	}
 

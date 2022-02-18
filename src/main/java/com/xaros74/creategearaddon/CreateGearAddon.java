@@ -43,7 +43,6 @@ public class CreateGearAddon {
 		event.enqueueWork(Ponder::register);
 	}
 
-	@SuppressWarnings("deprecation")
 	public static CreateRegistrate registrate() {
 		return registrate.get();
 	}
