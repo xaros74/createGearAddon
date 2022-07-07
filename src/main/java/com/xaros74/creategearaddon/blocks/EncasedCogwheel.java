@@ -7,6 +7,7 @@ import com.simibubi.create.content.contraptions.relays.elementary.SimpleKineticT
 import com.simibubi.create.content.contraptions.relays.encased.EncasedCogwheelBlock;
 import com.simibubi.create.content.schematics.ItemRequirement;
 import com.simibubi.create.repack.registrate.util.entry.BlockEntry;
+import com.xaros74.creategearaddon.CreateGearAddon;
 import com.xaros74.creategearaddon.index.AllModBlocks;
 import com.xaros74.creategearaddon.index.AllModTileEntities;
 
@@ -51,10 +52,12 @@ public class EncasedCogwheel extends EncasedCogwheelBlock {
 	
 	@Override
 	public ItemStack getPickBlock(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+		CreateGearAddon.LOGGER.info("target:");
+		CreateGearAddon.LOGGER.info(target);
 		if (target instanceof BlockHitResult)
 			return ((BlockHitResult) target).getDirection()
 				.getAxis() != getRotationAxis(state)
-					? isLarge ? AllModBlocks.LARGE_OAK_COGWHEEL.asStack() : AllModBlocks.OAK_COGWHEEL.asStack()
+					? isLarge ? AllModBlocks.LARGE_OAK_COGWHEEL.asStack() : AllModBlocks.BIRCH_COGWHEEL.asStack()
 					: getCasing().asStack();
 		return super.getPickBlock(state, target, world, pos, player);
 	}
@@ -62,13 +65,14 @@ public class EncasedCogwheel extends EncasedCogwheelBlock {
 	@SuppressWarnings("resource")
 	@Override
 	public InteractionResult onSneakWrenched(BlockState state, UseOnContext context) {
-		LOGGER.info("Blockstate: " + state.getBlock());
+		
+		CreateGearAddon.LOGGER.info("Blockstate: " + state.getBlock());
 		if (context.getLevel().isClientSide)
 			return InteractionResult.SUCCESS;
 		context.getLevel()
 			.levelEvent(2001, context.getClickedPos(), Block.getId(state));
 		KineticTileEntity.switchToBlockState(context.getLevel(), context.getClickedPos(),
-			(isLarge ? AllModBlocks.LARGE_OAK_COGWHEEL : AllModBlocks.OAK_COGWHEEL).getDefaultState()
+			(isLarge ? AllModBlocks.LARGE_BIRCH_COGWHEEL : AllModBlocks.BIRCH_COGWHEEL).getDefaultState()
 				.setValue(AXIS, state.getValue(AXIS)));
 		return InteractionResult.SUCCESS;
 	}
@@ -93,7 +97,6 @@ public class EncasedCogwheel extends EncasedCogwheelBlock {
 	
 	@Override
 	public BlockEntityType<? extends SimpleKineticTileEntity> getTileEntityType() {
-		LOGGER.info("nique");
 		return isLarge ? AllModTileEntities.getENCASED_LARGE_COGWHEEL().get() : AllModTileEntities.getENCASED_COGWHEEL().get();
 	}
 

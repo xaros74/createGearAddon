@@ -68,9 +68,8 @@ public class EncasedCogWheelRenderer extends EncasedCogRenderer {
 	
 	@Override
 	protected SuperByteBuffer getRotatedModel(KineticTileEntity te) {
-		CreateGearAddon.LOGGER.info("why it's not workibgngngjugdjskhs");
 		return CachedBufferer.partialFacingVertical(
-			large ? AllModBlockPartials.LARGE_SHAFTLESS_OAK_COGWHEEL : AllModBlockPartials.PARTIAL_SHAFTLESS_OAK_COGWHEEL, te.getBlockState(),
+			large ? AllModBlockPartials.PARTIAL_LARGE_SHAFTLESS_OAK_COGWHEEL : AllModBlockPartials.PARTIAL_SHAFTLESS_BIRCH_COGWHEEL, te.getBlockState(),
 			Direction.fromAxisAndDirection(te.getBlockState()
 				.getValue(EncasedCogwheel.AXIS), AxisDirection.POSITIVE));
 	}

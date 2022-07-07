@@ -75,7 +75,7 @@ public class AllModTileEntities {
 		ENCASED_ADDON_COGWHEEL = CreateGearAddon.registrate()
 				.tileEntity("encased_cogwheel", SimpleKineticTileEntity::new)
 				.instance(() -> EncasedCogWheelInstance::small)
-				.validBlocks(AllModBlocks.ANDESITE_ENCASED_COGWHEEL, AllModBlocks.MOD_BRASS_ENCASED_COGWHEEL)
+				.validBlocks(AllModBlocks.ANDESITE_ENCASED_COGWHEEL, AllModBlocks.BRASS_ENCASED_COGWHEEL)
 				.renderer(() -> EncasedCogWheelRenderer::small)
 				.register();
 		

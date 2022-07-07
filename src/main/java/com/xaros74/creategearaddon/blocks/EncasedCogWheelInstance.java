@@ -14,6 +14,7 @@ import com.simibubi.create.content.contraptions.base.KineticTileEntity;
 import com.simibubi.create.content.contraptions.base.flwdata.RotatingData;
 import com.simibubi.create.content.contraptions.relays.encased.EncasedCogInstance;
 import com.simibubi.create.foundation.utility.Iterate;
+import com.xaros74.creategearaddon.CreateGearAddon;
 import com.xaros74.creategearaddon.index.AllModBlockPartials;
 
 import net.minecraft.core.Direction;
@@ -69,8 +70,11 @@ public class EncasedCogWheelInstance extends EncasedCogInstance {
 		BlockState referenceState = tile.getBlockState();
 		Direction facing =
 			Direction.fromAxisAndDirection(referenceState.getValue(BlockStateProperties.AXIS), AxisDirection.POSITIVE);
-		PartialModel partial = large ? AllModBlockPartials.LARGE_SHAFTLESS_OAK_COGWHEEL : AllModBlockPartials.PARTIAL_SHAFTLESS_OAK_COGWHEEL;
-
+		PartialModel partial = large ? AllModBlockPartials.PARTIAL_LARGE_SHAFTLESS_OAK_COGWHEEL : AllModBlockPartials.PARTIAL_SHAFTLESS_BIRCH_COGWHEEL;
+		
+		CreateGearAddon.LOGGER.info("partial:");
+		CreateGearAddon.LOGGER.info(partial);
+		
 		return getRotatingMaterial().getModel(partial, referenceState, facing, () -> {
 			PoseStack poseStack = new PoseStack();
 			TransformStack.cast(poseStack)

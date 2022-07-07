@@ -52,7 +52,7 @@ public class CogWheel extends CogWheelBlock {
 			? new EncasedCogwheel[] { AllModBlocks.ANDESITE_ENCASED_LARGE_COGWHEEL.get(),
 				AllModBlocks.BRASS_ENCASED_LARGE_COGWHEEL.get() }
 			: new EncasedCogwheel[] { AllModBlocks.ANDESITE_ENCASED_COGWHEEL.get(),
-				AllModBlocks.MOD_BRASS_ENCASED_COGWHEEL.get() };
+				AllModBlocks.BRASS_ENCASED_COGWHEEL.get() };
 
 		for (EncasedCogwheel encasedCog : encasedBlocks) {
 			if (!encasedCog.getCasing()

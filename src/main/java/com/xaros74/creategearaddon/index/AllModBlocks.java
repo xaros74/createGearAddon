@@ -825,7 +825,7 @@ public class AllModBlocks {
 						.transform(axeOrPickaxe())
 						.register();
 
-				public static final BlockEntry<EncasedCogwheel> MOD_BRASS_ENCASED_COGWHEEL =
+				public static final BlockEntry<EncasedCogwheel> BRASS_ENCASED_COGWHEEL =
 					REGISTRATE.block("brass_encased_cogwheel", p -> EncasedCogwheel.brass(false, p, "Oak"))
 						.transform(BuilderTransformers.encasedCogwheel("brass", AllSpriteShifts.BRASS_CASING))
 						.onRegister(CreateRegistrate.connectedTextures(new EncasedCogCTBehaviour(AllSpriteShifts.BRASS_CASING,
@@ -971,7 +971,7 @@ public class AllModBlocks {
 			
 			CreateGearAddon.registrate().addToSection(ANDESITE_ENCASED_COGWHEEL, AllSections.KINETICS);
 			CreateGearAddon.registrate().addToSection(ANDESITE_ENCASED_LARGE_COGWHEEL, AllSections.KINETICS);
-			CreateGearAddon.registrate().addToSection(MOD_BRASS_ENCASED_COGWHEEL, AllSections.KINETICS);
+			CreateGearAddon.registrate().addToSection(BRASS_ENCASED_COGWHEEL, AllSections.KINETICS);
 			CreateGearAddon.registrate().addToSection(BRASS_ENCASED_LARGE_COGWHEEL, AllSections.KINETICS);
 		}
 		

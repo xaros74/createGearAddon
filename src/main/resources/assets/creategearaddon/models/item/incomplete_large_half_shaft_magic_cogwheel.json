@@ -9,7 +9,7 @@
     "0": "create:block/axis",
     "3": "create:block/axis_top",
     "particle": "biomesoplenty:block/stripped_magic_log",
-    "4": "creategearaddon:block/large_half_shaft_magic_cogwheel"
+    "4": "creategearaddon:block/large_magic_cogwheel"
   },
   "elements": [
     {

@@ -9,7 +9,7 @@
     "0": "create:block/axis",
     "3": "create:block/axis_top",
     "particle": "biomesoplenty:block/stripped_hellbark_log",
-    "4": "creategearaddon:block/large_half_shaft_hellbark_cogwheel"
+    "4": "creategearaddon:block/large_hellbark_cogwheel"
   },
   "elements": [
     {

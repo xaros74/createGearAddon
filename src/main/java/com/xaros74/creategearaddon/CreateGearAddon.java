@@ -54,6 +54,7 @@ public class CreateGearAddon
     private void clientInit() {
     	LOGGER.info("init block partial");
     	AllModBlockPartials.init();
+    	LOGGER.info(AllModBlockPartials.PARTIAL_SHAFTLESS_BIRCH_COGWHEEL.getLocation());
     }
     
     private void doClientStuff(final FMLClientSetupEvent event) {

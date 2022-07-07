@@ -5,7 +5,7 @@
 		"casing": "create:block/andesite_casing",
 		"1": "block/stripped_spruce_log_top",
 		"side": "create:block/andesite_encased_cogwheel_side",
-		"1_2": "creategearaddon:block/oak_cogwheel",
+		"1_2": "creategearaddon:block/birch_cogwheel",
 		"particle": "#casing"
 	},
 	"elements": [
