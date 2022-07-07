@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"D D",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "biomesoplenty:magic_button"
+		},
+		"D": {
+			"item": "biomesoplenty:magic_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_shaftless_magic_cogwheel",
+		"count": 2
+	}
+}

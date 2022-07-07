@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "creategearaddon:large_birch_cogwheel"
+    }
+  ],
+  "result": {
+    "item": "creategearaddon:large_shaftless_birch_cogwheel"
+  }
+}

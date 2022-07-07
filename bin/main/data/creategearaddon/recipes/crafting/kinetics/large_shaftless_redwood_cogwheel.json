@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"D D",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "biomesoplenty:redwood_button"
+		},
+		"D": {
+			"item": "biomesoplenty:redwood_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_shaftless_redwood_cogwheel",
+		"count": 2
+	}
+}

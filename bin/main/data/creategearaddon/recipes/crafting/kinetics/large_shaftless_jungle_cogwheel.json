@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"D D",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "minecraft:jungle_button"
+		},
+		"D": {
+			"item": "minecraft:jungle_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_shaftless_jungle_cogwheel",
+		"count": 2
+	}
+}

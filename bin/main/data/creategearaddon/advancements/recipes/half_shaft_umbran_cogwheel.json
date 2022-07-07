@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "creategearaddon:crafting/kinetics/half_shaft_umbran_cogwheel"
+    ]
+  },
+  "criteria": {
+    "has_cogwheels": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "create:cogwheel"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "creategearaddon:crafting/kinetics/half_shaft_umbran_cogwheel"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cogwheels",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"D D",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "minecraft:birch_button"
+		},
+		"D": {
+			"item": "minecraft:birch_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_shaftless_birch_cogwheel",
+		"count": 2
+	}
+}

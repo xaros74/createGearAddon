@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "A"
+  ],
+  "key": {
+    "C": {
+      "item": "creategearaddon:large_half_shaft_palm_cogwheel"
+    },
+    "A": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "result": {
+    "item": "creategearaddon:large_palm_cogwheel"
+  }
+}

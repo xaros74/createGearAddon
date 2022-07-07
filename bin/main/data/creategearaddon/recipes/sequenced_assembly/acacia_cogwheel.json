@@ -1,0 +1,65 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:andesite_alloy"
+  },
+  "transitionalItem": {
+    "item": "creategearaddon:incomplete_acacia_cogwheel"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "creategearaddon:incomplete_acacia_cogwheel"
+        },
+        {
+          "item": "minecraft:acacia_button"
+        }
+      ],
+      "results": [
+        {
+          "item": "creategearaddon:incomplete_acacia_cogwheel"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "creategearaddon:incomplete_acacia_cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "item": "creategearaddon:incomplete_acacia_cogwheel"
+        }
+      ],
+      "processingTime": 50
+    }
+  ],
+  "results": [
+    {
+      "item": "creategearaddon:acacia_cogwheel",
+      "count": 12,
+      "chance": 32.0
+    },
+    {
+      "item": "create:andesite_alloy",
+      "chance": 2.0
+    },
+    {
+      "item": "minecraft:andesite"
+    },
+    {
+      "item": "creategearaddon:large_acacia_cogwheel"
+    },
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    }
+  ],
+  "loops": 4
+}
