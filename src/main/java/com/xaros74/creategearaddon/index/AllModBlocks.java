@@ -2,6 +2,9 @@ package com.xaros74.creategearaddon.index;
 
 import com.simibubi.create.Create;
 import com.simibubi.create.content.AllSections;
+import com.simibubi.create.content.contraptions.fluids.pipes.BracketBlock;
+import com.simibubi.create.content.contraptions.fluids.pipes.BracketBlockItem;
+import com.simibubi.create.content.contraptions.fluids.pipes.BracketGenerator;
 import com.simibubi.create.content.contraptions.relays.elementary.BracketedKineticBlockModel;
 import com.simibubi.create.content.contraptions.relays.elementary.CogwheelBlockItem;
 import com.simibubi.create.foundation.block.BlockStressDefaults;
@@ -14,8 +17,8 @@ import com.simibubi.create.repack.registrate.providers.RegistrateBlockstateProvi
 import com.simibubi.create.repack.registrate.util.entry.BlockEntry;
 import com.xaros74.creategearaddon.CreateGearAddon;
 import com.xaros74.creategearaddon.blocks.CogWheel;
-import com.xaros74.creategearaddon.blocks.ShaftlessCogWheel;
 import com.xaros74.creategearaddon.blocks.HalfShaftCogWheel;
+import com.xaros74.creategearaddon.blocks.ShaftlessCogWheel;
 import com.xaros74.creategearaddon.groups.GearAddon;
 
 import net.minecraft.block.Block;
@@ -27,6 +30,12 @@ import net.minecraftforge.client.model.generators.ConfiguredModel;
 public class AllModBlocks {
 	private static final CreateRegistrate REGISTRATE = CreateGearAddon.registrate()
 			.itemGroup(() -> GearAddon.GEAR_ADDON_GROUP);
+	
+	public static final BlockEntry<BracketBlock> TEST_BRACKET = REGISTRATE.block("test_bracket", BracketBlock::new)
+			.blockstate(new BracketGenerator("test")::generate)
+			.item(BracketBlockItem::new)
+			.transform(BracketGenerator.itemModel("test"))
+			.register();
 
 	// **********************small cogwheels**********************
 
