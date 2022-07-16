@@ -812,13 +812,7 @@ public class AllModBlocks {
 				.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 				.build().register();
 		
-		//********************** bracket *****************************
-//		public static final BlockEntry<BracketBlock> TEST_BRACKET = REGISTRATE.block("test_bracket", BracketBlock::new)
-//				.blockstate(new BracketGenerator("test")::generate)
-//				.item(BracketBlockItem::new)
-//				.transform(BracketGenerator.itemModel("test"))
-//				.register();
-		
+		//***********************bracket******************************
 		public static final BlockEntry<BracketBlock> OAK_BRACKET = REGISTRATE.block("oak_bracket", BracketBlock::new)
 				.blockstate(new BracketGenerator("oak")::generate)
 				.item(BracketBlockItem::new)
@@ -860,6 +854,73 @@ public class AllModBlocks {
 				.item(BracketBlockItem::new)
 				.transform(BracketGenerator.itemModel("warped"))
 				.register();
+		
+		public static final BlockEntry<BracketBlock> CHERRY_BRACKET = REGISTRATE.block("cherry_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("cherry")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("cherry"))
+				.register();
+
+		public static final BlockEntry<BracketBlock> DEAD_BRACKET = REGISTRATE.block("dead_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("dead")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("dead"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> FIR_BRACKET = REGISTRATE.block("fir_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("fir")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("fir"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> HELLBARK_BRACKET = REGISTRATE.block("hellbark_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("hellbark")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("hellbark"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> JACARANDA_BRACKET = REGISTRATE.block("jacaranda_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("jacaranda")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("jacaranda"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> MAGIC_BRACKET = REGISTRATE.block("magic_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("magic")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("magic"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> MAHOGANY_BRACKET = REGISTRATE.block("mahogany_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("mahogany")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("mahogany"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> PALM_BRACKET = REGISTRATE.block("palm_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("palm")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("palm"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> REDWOOD_BRACKET = REGISTRATE.block("redwood_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("redwood")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("redwood"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> UMBRAN_BRACKET = REGISTRATE.block("willow_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("willow")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("willow"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> WILLOW_BRACKET = REGISTRATE.block("willow_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("willow")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("willow"))
+				.register();
+		
 		
 		
 	public static void register() {
@@ -991,6 +1052,19 @@ public class AllModBlocks {
 		Create.registrate().addToSection(DARK_OAK_BRACKET, AllSections.KINETICS);
 		Create.registrate().addToSection(CRIMSON_BRACKET, AllSections.KINETICS);
 		Create.registrate().addToSection(WARPED_BRACKET, AllSections.KINETICS);
+		
+		//***********************bracket******************************
+		Create.registrate().addToSection(CHERRY_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(DEAD_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(FIR_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(HELLBARK_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(JACARANDA_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(MAGIC_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(MAHOGANY_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(PALM_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(REDWOOD_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(UMBRAN_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(WILLOW_BRACKET, AllSections.KINETICS);
 	}
 
 	
