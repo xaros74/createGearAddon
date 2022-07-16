@@ -31,11 +31,6 @@ public class AllModBlocks {
 	private static final CreateRegistrate REGISTRATE = CreateGearAddon.registrate()
 			.itemGroup(() -> GearAddon.GEAR_ADDON_GROUP);
 	
-	public static final BlockEntry<BracketBlock> TEST_BRACKET = REGISTRATE.block("test_bracket", BracketBlock::new)
-			.blockstate(new BracketGenerator("test")::generate)
-			.item(BracketBlockItem::new)
-			.transform(BracketGenerator.itemModel("test"))
-			.register();
 
 	// **********************small cogwheels**********************
 
@@ -817,6 +812,55 @@ public class AllModBlocks {
 				.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 				.build().register();
 		
+		//********************** bracket *****************************
+//		public static final BlockEntry<BracketBlock> TEST_BRACKET = REGISTRATE.block("test_bracket", BracketBlock::new)
+//				.blockstate(new BracketGenerator("test")::generate)
+//				.item(BracketBlockItem::new)
+//				.transform(BracketGenerator.itemModel("test"))
+//				.register();
+		
+		public static final BlockEntry<BracketBlock> OAK_BRACKET = REGISTRATE.block("oak_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("oak")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("oak"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> SPRUCE_BRACKET = REGISTRATE.block("spruce_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("spruce")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("spruce"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> JUNGLE_BRACKET = REGISTRATE.block("jungle_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("jungle")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("jungle"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> ACACIA_BRACKET = REGISTRATE.block("acacia_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("acacia")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("acacia"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> DARK_OAK_BRACKET = REGISTRATE.block("dark_oak_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("dark_oak")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("dark_oak"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> CRIMSON_BRACKET = REGISTRATE.block("crimson_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("crimson")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("crimson"))
+				.register();
+		
+		public static final BlockEntry<BracketBlock> WARPED_BRACKET = REGISTRATE.block("warped_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("warped")::generate)
+				.item(BracketBlockItem::new)
+				.transform(BracketGenerator.itemModel("warped"))
+				.register();
+		
 		
 	public static void register() {
 		Create.registrate().addToSection(OAK_COGWHEEL, AllSections.KINETICS);
@@ -939,6 +983,14 @@ public class AllModBlocks {
 		Create.registrate().addToSection(LARGE_SHAFTLESS_REDWOOD_COGWHEEL, AllSections.KINETICS);
 		Create.registrate().addToSection(LARGE_SHAFTLESS_UMBRAN_COGWHEEL, AllSections.KINETICS);
 		Create.registrate().addToSection(LARGE_SHAFTLESS_WILLOW_COGWHEEL, AllSections.KINETICS);
+		
+		Create.registrate().addToSection(OAK_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(SPRUCE_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(JUNGLE_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(ACACIA_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(DARK_OAK_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(CRIMSON_BRACKET, AllSections.KINETICS);
+		Create.registrate().addToSection(WARPED_BRACKET, AllSections.KINETICS);
 	}
 
 	

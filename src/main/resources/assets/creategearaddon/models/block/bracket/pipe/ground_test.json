@@ -1,7 +1,0 @@
-{
-  "parent": "create:block/bracket/pipe/ground",
-  "textures": {
-    "bracket": "creategearaddon:block/bracket_test",
-    "plate": "creategearaddon:block/bracket_plate_test"
-  }
-}
