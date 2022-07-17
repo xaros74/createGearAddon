@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:dark_oak_bracket"
+          "name": "creategearaddon:dark_oak_bracket"
         }
       ],
       "conditions": [

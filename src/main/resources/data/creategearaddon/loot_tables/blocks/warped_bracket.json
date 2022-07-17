@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:warped_bracket"
+          "name": "creategearaddon:warped_bracket"
         }
       ],
       "conditions": [

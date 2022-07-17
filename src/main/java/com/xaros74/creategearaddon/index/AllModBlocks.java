@@ -909,10 +909,10 @@ public class AllModBlocks {
 				.transform(BracketGenerator.itemModel("redwood"))
 				.register();
 		
-		public static final BlockEntry<BracketBlock> UMBRAN_BRACKET = REGISTRATE.block("willow_bracket", BracketBlock::new)
-				.blockstate(new BracketGenerator("willow")::generate)
+		public static final BlockEntry<BracketBlock> UMBRAN_BRACKET = REGISTRATE.block("umbran_bracket", BracketBlock::new)
+				.blockstate(new BracketGenerator("umbran")::generate)
 				.item(BracketBlockItem::new)
-				.transform(BracketGenerator.itemModel("willow"))
+				.transform(BracketGenerator.itemModel("umbran"))
 				.register();
 		
 		public static final BlockEntry<BracketBlock> WILLOW_BRACKET = REGISTRATE.block("willow_bracket", BracketBlock::new)
