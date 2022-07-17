@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SDS",
+    "DCD",
+    "SDS"
+  ],
+  "key": {
+    "S": {
+      "item": "biomesoplenty:palm_button"
+    },
+    "C": {
+      "item": "create:andesite_alloy"
+    },
+    "D": {
+      "item": "biomesoplenty:palm_planks"
+    }
+  },
+  "result": {
+    "item": "creategearaddon:large_palm_cogwheel",
+    "count": 2
+  }
+}

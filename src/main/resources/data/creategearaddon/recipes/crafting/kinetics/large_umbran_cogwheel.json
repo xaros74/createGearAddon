@@ -1,9 +1,4 @@
 {
-  "conditions":[
-    {
-      "type": "forge:false"
-    }
-  ],  
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "SDS",
@@ -12,17 +7,17 @@
   ],
   "key": {
     "S": {
-      "item": "minecraft:spruce_button"
+      "item": "biomesoplenty:umbran_button"
     },
     "C": {
       "item": "create:andesite_alloy"
     },
     "D": {
-      "tag": "minecraft:planks"
+      "item": "biomesoplenty:umbran_planks"
     }
   },
   "result": {
-    "item": "create:large_cogwheel",
+    "item": "creategearaddon:large_umbran_cogwheel",
     "count": 2
   }
 }

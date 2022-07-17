@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "PCP"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:rods/wooden"
+    },
+    "P": {
+      "item": "biomesoplenty:redwood_planks"
+    },
+    "C": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "result": {
+    "item": "creategearaddon:redwood_bracket",
+    "count": 4
+  }
+}

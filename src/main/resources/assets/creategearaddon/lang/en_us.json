@@ -92,6 +92,18 @@
 	"block.creategearaddon.spruce_bracket": "Spruce bracket",
 	"block.creategearaddon.warped_bracket": "Warped bracket",
 
+	"block.creategearaddon.cherry_bracket": "Cherry bracket",
+	"block.creategearaddon.dead_bracket": "Dead bracket",
+	"block.creategearaddon.fir_bracket": "Fir bracket",
+	"block.creategearaddon.hellbark_bracket": "Hellbark bracket",
+	"block.creategearaddon.jacaranda_bracket": "Jacaranda bracket",
+	"block.creategearaddon.magic_bracket": "Magic bracket",
+	"block.creategearaddon.mahogany_bracket": "Mahogany bracket",
+	"block.creategearaddon.palm_bracket": "Palm bracket",
+	"block.creategearaddon.redwood_bracket": "Redwood bracket",
+	"block.creategearaddon.umbran_bracket": "Umbran bracket",
+	"block.creategearaddon.willow_bracket": "Willow bracket",
+
 	//biomes o'plenty
 	"block.creategearaddon.cherry_cogwheel": "Cherry cogwheel",
 	"block.creategearaddon.dead_cogwheel": "Dead cogwheel",

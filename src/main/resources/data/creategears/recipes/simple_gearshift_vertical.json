@@ -10,7 +10,7 @@
       "item": "create:andesite_casing"
     },
     "w": {
-      "tag": "creategearaddon:cogwheels"
+      "tag": "forge:cogwheels"
     }
   },
   "result": {
