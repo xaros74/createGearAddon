@@ -12,16 +12,18 @@ import com.xaros74.creategearaddon.index.AllModTileEntities;
 import com.xaros74.creategearaddon.ponder.Ponder;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(CreateGearAddon.MODID)
 public class CreateGearAddon {
-	private static final Logger LOGGER = LogManager.getLogger();
+	public static final Logger LOGGER = LogManager.getLogger();
 	public static final String MODID = "creategearaddon";
 
 	private static final NonNullLazyValue<CreateRegistrate> registrate = CreateRegistrate.lazy(CreateGearAddon.MODID);
+	private static final NonNullLazyValue<CreateRegistrate> no_bop_registrate = CreateRegistrate.lazy(CreateGearAddon.MODID);
 
 	public CreateGearAddon() {
 
@@ -44,8 +46,16 @@ public class CreateGearAddon {
 	}
 
 	@SuppressWarnings("deprecation")
+	public static CreateRegistrate registrate(String type) {
+		if (type == "bop" && ModList.get().isLoaded("biomesoplenty")) {
+			return registrate.get().itemGroup(() -> GearAddon.GEAR_ADDON_GROUP);
+		}else
+		return no_bop_registrate.get();
+	}
+	
+	@SuppressWarnings("deprecation")
 	public static CreateRegistrate registrate() {
-		return registrate.get();
+		return registrate.get().itemGroup(() -> GearAddon.GEAR_ADDON_GROUP);
 	}
 
 }

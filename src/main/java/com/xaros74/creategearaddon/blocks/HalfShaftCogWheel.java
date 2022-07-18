@@ -1,6 +1,7 @@
 package com.xaros74.creategearaddon.blocks;
 
 import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.xaros74.creategearaddon.index.AllModTileEntities;
 import com.xaros74.creategearaddon.util.ShapeUtil;
 
 import net.minecraft.block.Block;
@@ -8,6 +9,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.StateContainer;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
@@ -28,6 +30,11 @@ public class HalfShaftCogWheel extends CogWheel implements ShapeUtil{
 		super(large, properties);
 		registerDefaultState(this.defaultBlockState().setValue(AXIS_DIRECTION,
 				axisDirectionToBool(Direction.AxisDirection.POSITIVE)));
+	}
+	
+	@Override
+	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
+		return AllModTileEntities.getHALFSHAFT_COG_TILE().create();
 	}
 
 	@Override

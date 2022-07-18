@@ -1,9 +1,11 @@
 package com.xaros74.creategearaddon.blocks;
 
 import com.simibubi.create.foundation.utility.VoxelShaper;
+import com.xaros74.creategearaddon.index.AllModTileEntities;
 import com.xaros74.creategearaddon.util.ShapeUtil;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
@@ -19,6 +21,11 @@ public class ShaftlessCogWheel extends CogWheel implements ShapeUtil{
 
 	public ShaftlessCogWheel(boolean large, Properties properties) {
 		super(large, properties);
+	}
+	
+	@Override
+	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
+		return AllModTileEntities.getSHAFTLESS_COG_TILE().create();
 	}
 	
 	@Override
