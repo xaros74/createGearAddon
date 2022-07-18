@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/bracket/shaft/wall",
+  "textures": {
+    "bracket": "creategearaddon:block/bracket_willow",
+    "plate": "creategearaddon:block/bracket_plate_willow"
+  }
+}<

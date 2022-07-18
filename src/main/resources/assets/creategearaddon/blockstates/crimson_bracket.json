@@ -1,0 +1,154 @@
+{
+  "variants": {
+    "axis_along_first=false,facing=down,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/ground_crimson",
+      "x": 180
+    },
+    "axis_along_first=true,facing=down,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/ground_crimson",
+      "x": 180,
+      "y": 90
+    },
+    "axis_along_first=false,facing=up,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/ground_crimson"
+    },
+    "axis_along_first=true,facing=up,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/ground_crimson",
+      "y": 90
+    },
+    "axis_along_first=false,facing=north,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/wall_crimson",
+      "x": 90,
+      "y": 270
+    },
+    "axis_along_first=true,facing=north,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/wall_crimson",
+      "y": 270
+    },
+    "axis_along_first=false,facing=south,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/wall_crimson",
+      "x": 90,
+      "y": 90
+    },
+    "axis_along_first=true,facing=south,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/wall_crimson",
+      "y": 90
+    },
+    "axis_along_first=false,facing=west,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/wall_crimson",
+      "y": 180
+    },
+    "axis_along_first=true,facing=west,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/wall_crimson",
+      "x": 90,
+      "y": 180
+    },
+    "axis_along_first=false,facing=east,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/wall_crimson"
+    },
+    "axis_along_first=true,facing=east,type=pipe": {
+      "model": "creategearaddon:block/bracket/pipe/wall_crimson",
+      "x": 90
+    },
+    "axis_along_first=false,facing=down,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/ground_crimson",
+      "x": 180
+    },
+    "axis_along_first=true,facing=down,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/ground_crimson",
+      "x": 180,
+      "y": 90
+    },
+    "axis_along_first=false,facing=up,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/ground_crimson"
+    },
+    "axis_along_first=true,facing=up,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/ground_crimson",
+      "y": 90
+    },
+    "axis_along_first=false,facing=north,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/wall_crimson",
+      "x": 90,
+      "y": 270
+    },
+    "axis_along_first=true,facing=north,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/wall_crimson",
+      "y": 270
+    },
+    "axis_along_first=false,facing=south,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/wall_crimson",
+      "x": 90,
+      "y": 90
+    },
+    "axis_along_first=true,facing=south,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/wall_crimson",
+      "y": 90
+    },
+    "axis_along_first=false,facing=west,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/wall_crimson",
+      "y": 180
+    },
+    "axis_along_first=true,facing=west,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/wall_crimson",
+      "x": 90,
+      "y": 180
+    },
+    "axis_along_first=false,facing=east,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/wall_crimson"
+    },
+    "axis_along_first=true,facing=east,type=cog": {
+      "model": "creategearaddon:block/bracket/cog/wall_crimson",
+      "x": 90
+    },
+    "axis_along_first=false,facing=down,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/ground_crimson",
+      "x": 180
+    },
+    "axis_along_first=true,facing=down,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/ground_crimson",
+      "x": 180,
+      "y": 90
+    },
+    "axis_along_first=false,facing=up,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/ground_crimson"
+    },
+    "axis_along_first=true,facing=up,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/ground_crimson",
+      "y": 90
+    },
+    "axis_along_first=false,facing=north,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/wall_crimson",
+      "x": 90,
+      "y": 270
+    },
+    "axis_along_first=true,facing=north,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/wall_crimson",
+      "y": 270
+    },
+    "axis_along_first=false,facing=south,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/wall_crimson",
+      "x": 90,
+      "y": 90
+    },
+    "axis_along_first=true,facing=south,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/wall_crimson",
+      "y": 90
+    },
+    "axis_along_first=false,facing=west,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/wall_crimson",
+      "y": 180
+    },
+    "axis_along_first=true,facing=west,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/wall_crimson",
+      "x": 90,
+      "y": 180
+    },
+    "axis_along_first=false,facing=east,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/wall_crimson"
+    },
+    "axis_along_first=true,facing=east,type=shaft": {
+      "model": "creategearaddon:block/bracket/shaft/wall_crimson",
+      "x": 90
+    }
+  }
+}

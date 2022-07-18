@@ -1,16 +1,26 @@
 package com.xaros74.creategearaddon.tiles;
 
-import com.simibubi.create.content.contraptions.relays.elementary.BracketedKineticTileEntity;
+import java.util.List;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.state.BlockState;
+import com.simibubi.create.content.contraptions.relays.elementary.AbstractShaftBlock;
+import com.simibubi.create.content.contraptions.relays.elementary.BracketedTileEntityBehaviour;
+import com.simibubi.create.content.contraptions.relays.elementary.SimpleKineticTileEntity;
+import com.simibubi.create.foundation.advancement.AllTriggers;
+import com.simibubi.create.foundation.tileEntity.TileEntityBehaviour;
 
-public class CogTile extends BracketedKineticTileEntity {
+import net.minecraft.tileentity.TileEntityType;
 
-	public CogTile(BlockEntityType<?> type, BlockPos pos, BlockState state) {
-		super(type, pos, state);
-		// TODO Auto-generated constructor stub
+public class CogTile extends SimpleKineticTileEntity {
+
+	public CogTile(TileEntityType<? extends SimpleKineticTileEntity> type) {
+		super(type);
+	}
+	
+	@Override
+	public void addBehaviours(List<TileEntityBehaviour> behaviours) {
+		behaviours.add(new BracketedTileEntityBehaviour(this, state -> state.getBlock() instanceof AbstractShaftBlock)
+			.withTrigger(state -> AllTriggers.BRACKET_APPLY_TRIGGER.constructTriggerFor(state.getBlock())));
+		super.addBehaviours(behaviours);
 	}
 
 }

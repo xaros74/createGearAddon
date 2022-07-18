@@ -2,8 +2,8 @@ package com.xaros74.creategearaddon.ponder;
 
 import com.simibubi.create.foundation.ponder.PonderRegistrationHelper;
 import com.simibubi.create.foundation.ponder.PonderRegistry;
-import com.simibubi.create.foundation.ponder.PonderTag;
 import com.simibubi.create.foundation.ponder.content.KineticsScenes;
+import com.simibubi.create.foundation.ponder.content.PonderTag;
 import com.xaros74.creategearaddon.CreateGearAddon;
 import com.xaros74.creategearaddon.index.AllModBlocks;
 
@@ -89,4 +89,5 @@ public class Ponder {
 				.add(AllModBlocks.LARGE_ACACIA_COGWHEEL).add(AllModBlocks.LARGE_DARK_OAK_COGWHEEL)
 				.add(AllModBlocks.LARGE_CRIMSON_COGWHEEL).add(AllModBlocks.LARGE_WARPED_COGWHEEL);
 	}
+
 }

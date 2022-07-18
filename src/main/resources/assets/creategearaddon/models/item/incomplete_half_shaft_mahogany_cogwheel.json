@@ -5,8 +5,8 @@
   "textures": {
     "0": "create:block/axis",
     "3": "create:block/axis_top",
-    "particle": "biomesoplenty:block/stripped_mahogany_log",
-    "1_2": "creategearaddon:block/mahogany_cogwheel" 
+    "1_2": "creategearaddon:block/mahogany_cogwheel",
+    "particle": "biomesoplenty:block/stripped_mahogany_log"
   },
   "elements": [
     {
