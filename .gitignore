@@ -4,6 +4,6 @@ bin/
 run/
 .classpath
 .settings/
-.projects
+.project
 
 *.launch
