@@ -6,7 +6,6 @@ license="MIT License, Copyright 2021 MRH0"
 modId="creategearaddon"
 version="${file.jarVersion}"
 displayName="Create gear addon"
-#logoFile="creategearaddon.png"
 authors="xaros74"
 description='''
 This is a simple mod that add gears with different color textures.
@@ -18,7 +17,7 @@ This is a simple mod that add gears with different color textures.
     versionRange="[37,)"
     ordering="NONE"
     side="BOTH"
-
+    
 [[dependencies.creategearaddon]]
     modId="create"
     mandatory=true

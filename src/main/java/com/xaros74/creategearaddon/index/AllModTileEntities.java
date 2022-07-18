@@ -14,7 +14,7 @@ public class AllModTileEntities {
 	private static TileEntityEntry<ShaftlessCogTile> SHAFTLESS_COG_TILE;
 
 	public static void register() {
-		COG_TILE = CreateGearAddon.registrate().tileEntity("simple_kinetic", CogTile::new)
+		COG_TILE = CreateGearAddon.registrate().tileEntity("cog_tile", CogTile::new)
 				.instance(() -> SingleRotatingInstance::new)
 				.validBlocks(AllModBlocks.OAK_COGWHEEL, AllModBlocks.ACACIA_COGWHEEL, AllModBlocks.BIRCH_COGWHEEL,
 						AllModBlocks.CRIMSON_COGWHEEL, AllModBlocks.DARK_OAK_COGWHEEL, AllModBlocks.JUNGLE_COGWHEEL,

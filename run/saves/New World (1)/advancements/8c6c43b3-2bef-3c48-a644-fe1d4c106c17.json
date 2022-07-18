@@ -35,15 +35,21 @@
     },
     "done": true
   },
+  "creategearaddon:recipes/fir_cogwheel": {
+    "criteria": {
+      "has_item": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
+  },
   "create:recipes/create.base/crafting/kinetics/mechanical_crafter": {
     "criteria": {
       "has_item": "2022-06-12 13:05:45 +0200"
     },
     "done": true
   },
-  "creategearaddon:recipes/fir_cogwheel": {
+  "creategearaddon:recipes/half_shaft_willow_cogwheel": {
     "criteria": {
-      "has_item": "2022-06-12 13:05:34 +0200"
+      "has_cogwheels": "2022-06-12 13:05:34 +0200"
     },
     "done": true
   },
@@ -59,12 +65,6 @@
     },
     "done": true
   },
-  "creategearaddon:recipes/half_shaft_willow_cogwheel": {
-    "criteria": {
-      "has_cogwheels": "2022-06-12 13:05:34 +0200"
-    },
-    "done": true
-  },
   "creategearaddon:recipes/large_half_shaft_magic_cogwheel": {
     "criteria": {
       "has_large_cogwheels": "2022-06-12 13:05:34 +0200"
@@ -77,6 +77,12 @@
     },
     "done": true
   },
+  "creategearaddon:recipes/crimson_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
   "creategearaddon:recipes/shaftless_cherry_cogwheel": {
     "criteria": {
       "has_item": "2022-06-12 13:05:34 +0200"
@@ -86,6 +92,19 @@
   "creategearaddon:recipes/large_shaftless_magic_cogwheel": {
     "criteria": {
       "has_item": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
+  },
+  "creategearaddon:recipes/jacaranda_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
+  "creategearaddon:recipes/willow_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200",
+      "has_the_recipe": "2022-07-18 22:13:26 +0200"
     },
     "done": true
   },
@@ -119,6 +138,12 @@
     },
     "done": true
   },
+  "creategearaddon:recipes/acacia_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
   "creategearaddon:recipes/half_shaft_jungle_cogwheel": {
     "criteria": {
       "has_cogwheels": "2022-06-12 13:05:34 +0200"
@@ -140,6 +165,12 @@
   "create:recipes/create.base/crafting/kinetics/mechanical_piston": {
     "criteria": {
       "has_item": "2022-06-12 13:05:43 +0200"
+    },
+    "done": true
+  },
+  "creategearaddon:recipes/mahogany_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
     },
     "done": true
   },
@@ -209,9 +240,21 @@
     },
     "done": true
   },
+  "creategearaddon:recipes/oak_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
   "creategearaddon:recipes/large_half_shaft_warped_cogwheel": {
     "criteria": {
       "has_large_cogwheels": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
+  },
+  "creategears:recipes/creategears/large_gear": {
+    "criteria": {
+      "has_large_cogwheels": "2022-07-18 22:13:26 +0200"
     },
     "done": true
   },
@@ -281,6 +324,12 @@
     },
     "done": true
   },
+  "creategearaddon:recipes/redwood_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
   "creategearaddon:recipes/birch_cogwheel": {
     "criteria": {
       "has_item": "2022-06-12 13:05:34 +0200",
@@ -315,6 +364,12 @@
   "create:recipes/create.base/crafting/logistics/redstone_contact": {
     "criteria": {
       "has_item": "2022-06-12 13:05:45 +0200"
+    },
+    "done": true
+  },
+  "creategearaddon:recipes/hellbark_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
     },
     "done": true
   },
@@ -372,9 +427,21 @@
     },
     "done": true
   },
+  "creategears:recipes/creategears/gear": {
+    "criteria": {
+      "has_cogwheels": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
   "creategearaddon:recipes/half_shaft_fir_cogwheel": {
     "criteria": {
       "has_cogwheels": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
+  },
+  "create:wrench": {
+    "criteria": {
+      "0": "2022-07-18 22:14:03 +0200"
     },
     "done": true
   },
@@ -387,6 +454,12 @@
   "creategearaddon:recipes/large_shaftless_birch_cogwheel": {
     "criteria": {
       "has_item": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
+  },
+  "creategearaddon:recipes/birch_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
     },
     "done": true
   },
@@ -468,6 +541,12 @@
     },
     "done": true
   },
+  "creategearaddon:recipes/palm_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
   "creategearaddon:recipes/large_jacaranda_cogwheel": {
     "criteria": {
       "has_item": "2022-06-12 13:05:34 +0200"
@@ -480,17 +559,17 @@
     },
     "done": true
   },
-  "creategearaddon:recipes/shaftless_acacia_cogwheel": {
-    "criteria": {
-      "has_item": "2022-06-12 13:05:34 +0200"
-    },
-    "done": true
-  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:plains": "2022-06-12 13:05:14 +0200"
     },
     "done": false
+  },
+  "creategearaddon:recipes/shaftless_acacia_cogwheel": {
+    "criteria": {
+      "has_item": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
   },
   "create:andesite_casing": {
     "criteria": {
@@ -558,9 +637,21 @@
     },
     "done": true
   },
+  "creategearaddon:recipes/umbran_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
   "creategearaddon:recipes/large_shaftless_fir_cogwheel": {
     "criteria": {
       "has_item": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
+  },
+  "creategears:recipes/creategears/large_half_shaft_gear": {
+    "criteria": {
+      "has_large_cogwheels": "2022-07-18 22:13:26 +0200"
     },
     "done": true
   },
@@ -573,6 +664,12 @@
   "creategearaddon:recipes/large_dead_cogwheel": {
     "criteria": {
       "has_item": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
+  },
+  "creategearaddon:recipes/jungle_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
     },
     "done": true
   },
@@ -594,6 +691,12 @@
     },
     "done": true
   },
+  "creategearaddon:recipes/spruce_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
   "creategearaddon:recipes/large_fir_cogwheel": {
     "criteria": {
       "has_item": "2022-06-12 13:05:34 +0200"
@@ -606,21 +709,27 @@
     },
     "done": true
   },
+  "creategearaddon:recipes/warped_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
   "creategearaddon:recipes/half_shaft_acacia_cogwheel": {
     "criteria": {
       "has_cogwheels": "2022-06-12 13:05:34 +0200"
     },
     "done": true
   },
-  "create:recipes/create.base/crafting/kinetics/sequenced_gearshift": {
-    "criteria": {
-      "has_item": "2022-06-12 13:05:45 +0200"
-    },
-    "done": true
-  },
   "create:recipes/create.base/crafting/kinetics/cogwheel": {
     "criteria": {
       "has_the_recipe": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/sequenced_gearshift": {
+    "criteria": {
+      "has_item": "2022-06-12 13:05:45 +0200"
     },
     "done": true
   },
@@ -678,9 +787,21 @@
     },
     "done": true
   },
+  "creategearaddon:recipes/magic_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
   "create:recipes/create.base/crafting/kinetics/adjustable_chain_gearshift": {
     "criteria": {
       "has_item": "2022-06-12 13:05:45 +0200"
+    },
+    "done": true
+  },
+  "creategearaddon:recipes/dark_oak_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
     },
     "done": true
   },
@@ -711,6 +832,24 @@
   "creategearaddon:recipes/large_shaftless_oak_cogwheel": {
     "criteria": {
       "has_item": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
+  },
+  "creategearaddon:recipes/cherry_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
+  "creategearaddon:recipes/fir_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
+    },
+    "done": true
+  },
+  "creategears:recipes/creategears/half_shaft_gear": {
+    "criteria": {
+      "has_cogwheels": "2022-07-18 22:13:26 +0200"
     },
     "done": true
   },
@@ -807,6 +946,12 @@
   "creategearaddon:recipes/large_palm_cogwheel": {
     "criteria": {
       "has_item": "2022-06-12 13:05:34 +0200"
+    },
+    "done": true
+  },
+  "creategearaddon:recipes/dead_bracket": {
+    "criteria": {
+      "has_item": "2022-07-18 22:13:26 +0200"
     },
     "done": true
   },

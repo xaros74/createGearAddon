@@ -3,10 +3,10 @@ package com.xaros74.creategearaddon.groups;
 import com.xaros74.creategearaddon.CreateGearAddon;
 import com.xaros74.creategearaddon.index.AllModBlocks;
 
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 
-public class GearAddon extends ItemGroup {
+public class GearAddon extends CreativeModeTab {
 	public static GearAddon GEAR_ADDON_GROUP;
 
 	public GearAddon(String label) {

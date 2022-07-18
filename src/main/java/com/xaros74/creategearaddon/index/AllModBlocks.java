@@ -20,10 +20,10 @@ import com.xaros74.creategearaddon.blocks.CogWheel;
 import com.xaros74.creategearaddon.blocks.HalfShaftCogWheel;
 import com.xaros74.creategearaddon.blocks.ShaftlessCogWheel;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.state.properties.BlockStateProperties;
-import net.minecraft.util.Direction;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 
 public class AllModBlocks {

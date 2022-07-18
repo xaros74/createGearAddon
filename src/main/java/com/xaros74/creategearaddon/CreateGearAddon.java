@@ -23,18 +23,19 @@ public class CreateGearAddon {
 	public static final String MODID = "creategearaddon";
 
 	private static final NonNullLazyValue<CreateRegistrate> registrate = CreateRegistrate.lazy(CreateGearAddon.MODID);
-	private static final NonNullLazyValue<CreateRegistrate> no_bop_registrate = CreateRegistrate.lazy(CreateGearAddon.MODID);
+	private static final NonNullLazyValue<CreateRegistrate> no_bop_registrate = CreateRegistrate
+			.lazy(CreateGearAddon.MODID);
 
 	public CreateGearAddon() {
 
 		// Register the doClientStuff method for modloading
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-		
+
 		// Register ourselves for server and other game events we are interested in
 		MinecraftForge.EVENT_BUS.register(this);
-		
+
 		new GearAddon("gear_addon_group");
-		
+
 		AllModBlocks.register();
 		AllModItems.register();
 		AllModTileEntities.register();
@@ -45,15 +46,13 @@ public class CreateGearAddon {
 		event.enqueueWork(Ponder::register);
 	}
 
-	@SuppressWarnings("deprecation")
 	public static CreateRegistrate registrate(String type) {
 		if (type == "bop" && ModList.get().isLoaded("biomesoplenty")) {
 			return registrate.get().itemGroup(() -> GearAddon.GEAR_ADDON_GROUP);
-		}else
-		return no_bop_registrate.get();
+		} else
+			return no_bop_registrate.get();
 	}
-	
-	@SuppressWarnings("deprecation")
+
 	public static CreateRegistrate registrate() {
 		return registrate.get().itemGroup(() -> GearAddon.GEAR_ADDON_GROUP);
 	}
