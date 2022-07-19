@@ -25,7 +25,7 @@ mixin {
     add sourceSets.main, "creategearaddon.refmap.json"
 }
 
-version = "v${mod_version}"
+version = "${minecraft_version} v${mod_version}"
 group = 'com.xaros74.creategearaddon' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'creategearaddon'
 
