@@ -30,7 +30,7 @@ version = "v${mod_version}"
 group = 'com.xaros74.creategearaddon' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'creategearaddon'
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(17) // Mojang ships Java 8 to end users, so your mod should target Java 8.
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
