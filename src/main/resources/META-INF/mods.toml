@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[39,)"
+loaderVersion="[37,)"
 license="MIT License, Copyright 2021 MRH0"
 
 [[mods]]
@@ -8,26 +8,26 @@ version="${file.jarVersion}"
 displayName="Create gear addon"
 authors="xaros74"
 description='''
-This is a simple mod that add gears with textures colors from vanilla wood.
+This is a simple mod that add gears with different color textures.
 '''
 
-[[dependencies.creategearaddon]] #optional
+[[dependencies.creategearaddon]]
     modId="forge"
     mandatory=true
-    versionRange="[39,)"
+    versionRange="[37,)"
     ordering="NONE"
     side="BOTH"
     
 [[dependencies.creategearaddon]]
     modId="create"
     mandatory=true
-    versionRange="[mc1.18.1_v0.4d,)"
+    versionRange="[mc1.17.1_v0.4,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.creategearaddon]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.1, 1.19)"
+    versionRange="[1.17.1,1.18)"
     ordering="NONE"
     side="BOTH"

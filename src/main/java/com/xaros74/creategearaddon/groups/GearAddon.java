@@ -20,6 +20,4 @@ public class GearAddon extends CreativeModeTab {
 		return new ItemStack(AllModBlocks.OAK_COGWHEEL.get());
 	}
 
-	
-
 }

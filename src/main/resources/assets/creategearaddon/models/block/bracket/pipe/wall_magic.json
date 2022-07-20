@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/bracket/pipe/wall",
+  "textures": {
+    "bracket": "creategearaddon:block/bracket_magic",
+    "plate": "creategearaddon:block/bracket_plate_magic"
+  }
+}<

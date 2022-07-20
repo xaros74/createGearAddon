@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/bracket/item",
+  "textures": {
+    "bracket": "creategearaddon:block/bracket_warped",
+    "plate": "creategearaddon:block/bracket_plate_warped"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/bracket/shaft/ground",
+  "textures": {
+    "bracket": "creategearaddon:block/bracket_jungle",
+    "plate": "creategearaddon:block/bracket_plate_jungle"
+  }
+}
