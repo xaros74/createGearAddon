@@ -1,59 +1,53 @@
+
 buildscript {
     repositories {
         maven { url = 'https://maven.minecraftforge.net' }
         mavenCentral()
-
-        maven { url='https://repo.spongepowered.org/repository/maven-public/' }
         jcenter()
-
-         maven { url = 'https://maven.parchmentmc.org' }
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public' }
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
-        classpath "org.parchmentmc:librarian:${librarian_version}"
+        classpath "org.spongepowered:mixingradle:${mixingradle_version}"
     }
 }
-apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-apply plugin: 'org.parchmentmc.librarian.forgegradle'
-apply plugin: 'eclipse'
-apply plugin: 'maven-publish'
-
+plugins {
+    id 'eclipse'
+    id 'maven-publish'
+    id 'com.matthewprenger.cursegradle' version '1.4.0'
+}
+apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
-mixin {
-    add sourceSets.main, "creategearaddon.refmap.json"
-}
 
-version = "v${mod_version}"
-group = 'com.xaros74.creategearaddon' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+
+version = '1.0'
+// TODO: update group and archive name
+group = 'com.rabbitminers.creategearaddon' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'creategearaddon'
 
+// Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
-println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
+
+
+// TODO: Replace update runs (swap creategearaddon for your mod id)
+println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
+    mappings channel: 'official', version: '1.18.2'
 
+    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg') // Currently, this location cannot be changed from the default.
 
-    mappings channel: 'parchment', version: "${parchment_version}-${minecraft_version}"
-    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
-    
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
-
-    // Default run configurations.
-    // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
             workingDirectory project.file('run')
-
-            args "-mixin.config=creategearaddon.mixins.json", "--username", "dev"
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-
+            arg '-mixin.config=creategearaddon.mixins.json'
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-
+            property 'forge.enabledGameTestNamespaces', 'creategearaddon'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
             mods {
                 creategearaddon {
                     source sourceSets.main
@@ -63,20 +57,26 @@ minecraft {
 
         server {
             workingDirectory project.file('run')
-
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-
-            // Recommended logging data for a userdev environment
-            // The markers can be changed as needed.
-            // "SCAN": For mods scan.
-            // "REGISTRIES": For firing of registry events.
-            // "REGISTRYDUMP": For getting the contents of all registries.
+            arg '-mixin.config=creategearaddon.mixins.json'
             property 'forge.logging.markers', 'REGISTRIES'
-
-            // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'creategearaddon'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            mods {
+                creategearaddon {
+                    source sourceSets.main
+                }
+            }
+        }
 
+        gameTestServer {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'creategearaddon'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
             mods {
                 creategearaddon {
                     source sourceSets.main
@@ -86,25 +86,9 @@ minecraft {
 
         data {
             workingDirectory project.file('run')
-
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-
-            // Recommended logging data for a userdev environment
-            // The markers can be changed as needed.
-            // "SCAN": For mods scan.
-            // "REGISTRIES": For firing of registry events.
-            // "REGISTRYDUMP": For getting the contents of all registries.
             property 'forge.logging.markers', 'REGISTRIES'
-
-            // Recommended logging level for the console
-            // You can set various levels here.
-            // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
-
-            // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', 'creategearaddon', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
-
             mods {
                 creategearaddon {
                     source sourceSets.main
@@ -117,68 +101,71 @@ minecraft {
 // Include resources generated by data generators.
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
+// JEI has been included although in the development enviroment although it is not strictly required for create
 repositories {
+
     maven {
-        url "https://www.cursemaven.com"
+        // JEI
+        name 'Progwm16 maven'
+        url 'https://dvs1.progwml6.com/files/maven'
+    }
+    maven {
+        // Mixed mappings, Registrate, Flywheel
+        name 'tterrag maven'
+        url 'https://maven.tterrag.com'
+    }
+    maven {
+        url 'https://www.cursemaven.com'
         content {
             includeGroup "curse.maven"
         }
     }
-
     maven {
-        // Location of the maven for mixed mappings, Registrate, and Flywheel
-        name 'tterrag maven'
-        url 'https://maven.tterrag.com'
-    }
-
-    maven {
-        // location of the maven that hosts JEI files (And TiC)
-        name "Progwml6 maven"
-        url "https://dvs1.progwml6.com/files/maven"
+        url "https://maven.tterrag.com/"
     }
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.1-39.0.59'
 
-    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}")
+    minecraft 'net.minecraftforge:forge:1.18.2-40.1.68'
 
-    compileOnly fg.deobf("curse.maven:biomesoplenty-220318:3544153")
-    runtimeOnly fg.deobf("curse.maven:biomesoplenty-220318:3544153")
+    // Create Flywheel and Registrate
+    implementation fg.deobf("com.simibubi.create:create-${create_minecraft_version}:${create_version}:all") { transitive = false }
+    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
+    compileOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 
-    implementation fg.deobf("curse.maven:create-328085:3623348")
+    // JEI
+    compileOnly fg.deobf("mezz.jei:jei-${jei_minecraft_version}:${jei_version}:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-${jei_minecraft_version}:${jei_version}")
 
-    implementation fg.deobf("com.jozufozu.flywheel:Flywheel-Forge:${flywheel_version}")
+    compileOnly fg.deobf("curse.maven:biomesoplenty-220318:3759236")
+    runtimeOnly fg.deobf("curse.maven:biomesoplenty-220318:3759236")
 
-    annotationProcessor 'org.spongepowered:mixin:0.8:processor'
+    compileOnly fg.deobf("com.github.glitchfiend:TerraBlender-forge:${terrablender_version}")
+    runtimeOnly fg.deobf("com.github.glitchfiend:TerraBlender-forge:${terrablender_version}")
 
+    // Sponge
+    annotationProcessor "org.spongepowered:mixin:0.8.3:processor"
+    testAnnotationProcessor "org.spongepowered:mixin:0.8.3:processor"
 }
 
+// Example for how to get properties into the manifest for reading at runtime.
 jar {
     manifest {
         attributes([
-            "Specification-Title": "creategearaddon",
-            "Specification-Vendor": "xaros74",
-            "Specification-Version": "1", // We are version 1 of ourselves
-            "Implementation-Title": project.name,
-            "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"xaros74",
-            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                "Specification-Title"     : "creategearaddon",
+                "Specification-Vendor"    : "xaros74",
+                "Specification-Version"   : "1", // We are version 1 of ourselves
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Vendor"   : "xaros74",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+                "MixinConfigs": "creategearaddon.mixins.json" // TODO: update this for your modid
         ])
     }
 }
 
-jar {
-    manifest {
-        attributes([
-            "MixinConfigs": "creategearaddon.mixins.json"
-        ])
-    }
-}
-
-jar.finalizedBy('reobfJar') 
-
+jar.finalizedBy('reobfJar')
 
 publishing {
     publications {
@@ -188,7 +175,11 @@ publishing {
     }
     repositories {
         maven {
-            url "file:///${project.projectDir}/mcmodsrepo"
+            url "file://${project.projectDir}/mcmodsrepo"
         }
     }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
 }

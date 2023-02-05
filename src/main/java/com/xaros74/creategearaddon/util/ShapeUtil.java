@@ -5,8 +5,9 @@ import com.simibubi.create.AllShapes.Builder;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public interface ShapeUtil {
 
+public interface ShapeUtil {
+	
 	default Builder shape(VoxelShape shape) {
 		return new Builder(shape);
 	}

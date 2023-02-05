@@ -1,7 +1,7 @@
 package com.xaros74.creategearaddon.blocks;
 
+import com.simibubi.create.content.contraptions.base.KineticTileEntity;
 import com.simibubi.create.content.contraptions.relays.elementary.CogWheelBlock;
-import com.simibubi.create.content.contraptions.relays.elementary.SimpleKineticTileEntity;
 import com.xaros74.creategearaddon.index.AllModTileEntities;
 
 import net.minecraft.core.BlockPos;
@@ -20,15 +20,14 @@ public class CogWheel extends CogWheelBlock {
 	}
 
 	@Override
-	public BlockEntityType<? extends SimpleKineticTileEntity> getTileEntityType() {
-		return AllModTileEntities.getCOG_TILE().get();
+	public BlockEntityType<? extends KineticTileEntity> getTileEntityType() {
+		return AllModTileEntities.COG_TILE.get();
 	}
 	
 	@Override
 	public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand,
-			BlockHitResult ray) {
-				return InteractionResult.PASS;
-		
+		BlockHitResult ray) {
+		return InteractionResult.PASS;
 	}
 
 }

@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.repack.registrate.util.NonNullLazyValue;
+import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import com.xaros74.creategearaddon.groups.GearAddon;
 import com.xaros74.creategearaddon.index.AllModBlocks;
 import com.xaros74.creategearaddon.index.AllModItems;
@@ -22,23 +22,22 @@ public class CreateGearAddon {
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static final String MODID = "creategearaddon";
 
-	private static final NonNullLazyValue<CreateRegistrate> registrate = CreateRegistrate.lazy(CreateGearAddon.MODID);
-	private static final NonNullLazyValue<CreateRegistrate> no_bop_registrate = CreateRegistrate
-			.lazy(CreateGearAddon.MODID);
+	public static final NonNullSupplier<CreateRegistrate> REGISTRATE = CreateRegistrate.lazy(MODID);
+	private static final NonNullSupplier<CreateRegistrate> no_bop_registrate = CreateRegistrate.lazy(MODID);
 
 	public CreateGearAddon() {
-
-		// Register the doClientStuff method for modloading
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-
+		
 		// Register ourselves for server and other game events we are interested in
 		MinecraftForge.EVENT_BUS.register(this);
-
+		
 		new GearAddon("gear_addon_group");
-
+		
 		AllModBlocks.register();
 		AllModItems.register();
 		AllModTileEntities.register();
+		
+		// Register the doClientStuff method for modloading
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
 	}
 
@@ -48,13 +47,18 @@ public class CreateGearAddon {
 
 	public static CreateRegistrate registrate(String type) {
 		if (type == "bop" && ModList.get().isLoaded("biomesoplenty")) {
-			return registrate.get().itemGroup(() -> GearAddon.GEAR_ADDON_GROUP);
-		} else
-			return no_bop_registrate.get();
+			return REGISTRATE.get().creativeModeTab(() -> GearAddon.GEAR_ADDON_GROUP);
+		}else
+		return no_bop_registrate.get();
 	}
-
+	
 	public static CreateRegistrate registrate() {
-		return registrate.get().itemGroup(() -> GearAddon.GEAR_ADDON_GROUP);
+		return REGISTRATE.get().creativeModeTab(() -> GearAddon.GEAR_ADDON_GROUP);
+	}
+	
+	public static CreateRegistrate registrateTile() {
+		LOGGER.info("registrate simple kinetic");
+		return REGISTRATE.get();
 	}
 
 }

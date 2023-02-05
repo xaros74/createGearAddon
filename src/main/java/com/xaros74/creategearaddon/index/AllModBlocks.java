@@ -1,6 +1,5 @@
 package com.xaros74.creategearaddon.index;
 
-import com.simibubi.create.Create;
 import com.simibubi.create.content.AllSections;
 import com.simibubi.create.content.contraptions.fluids.pipes.BracketBlock;
 import com.simibubi.create.content.contraptions.fluids.pipes.BracketBlockItem;
@@ -12,9 +11,9 @@ import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.BlockStateGen;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
-import com.simibubi.create.repack.registrate.providers.DataGenContext;
-import com.simibubi.create.repack.registrate.providers.RegistrateBlockstateProvider;
-import com.simibubi.create.repack.registrate.util.entry.BlockEntry;
+import com.tterrag.registrate.providers.DataGenContext;
+import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
+import com.tterrag.registrate.util.entry.BlockEntry;
 import com.xaros74.creategearaddon.CreateGearAddon;
 import com.xaros74.creategearaddon.blocks.CogWheel;
 import com.xaros74.creategearaddon.blocks.HalfShaftCogWheel;
@@ -27,7 +26,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 
 public class AllModBlocks {
-
 	private static final CreateRegistrate REGISTRATE = CreateGearAddon.registrate();
 	private static final CreateRegistrate BOP_REGISTRATE = CreateGearAddon.registrate("bop");
 
@@ -134,13 +132,7 @@ public class AllModBlocks {
 			.build().register();
 
 	// **********************halfshaft cogwheels**********************
-	public static final BlockEntry<HalfShaftCogWheel> HALF_SHAFT_COGWHEEL = REGISTRATE
-			.block("half_shaft_cogwheel", (p) -> new HalfShaftCogWheel(false, p))
-			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
-			.properties(p -> p.sound(SoundType.WOOD)).blockstate(AllModBlocks::halfShaftGearState)
-			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
-			.build().register();
-	
+
 	public static final BlockEntry<HalfShaftCogWheel> HALF_SHAFT_OAK_COGWHEEL = REGISTRATE
 			.block("half_shaft_oak_cogwheel", (p) -> new HalfShaftCogWheel(false, p))
 			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
@@ -191,13 +183,7 @@ public class AllModBlocks {
 			.build().register();
 
 	// **********************large halfshaft cogwheels**********************
-	public static final BlockEntry<HalfShaftCogWheel> LARGE_HALF_SHAFT_COGWHEEL = REGISTRATE
-			.block("large_half_shaft_cogwheel", (p) -> new HalfShaftCogWheel(true, p))
-			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
-			.properties(p -> p.sound(SoundType.WOOD)).blockstate(AllModBlocks::halfShaftGearState)
-			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
-			.build().register();
-	
+
 	public static final BlockEntry<HalfShaftCogWheel> LARGE_HALF_SHAFT_OAK_COGWHEEL = REGISTRATE
 			.block("large_half_shaft_oak_cogwheel", (p) -> new HalfShaftCogWheel(true, p))
 			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
@@ -248,13 +234,7 @@ public class AllModBlocks {
 			.build().register();
 
 	// **********************small shaftless_ cogwheels**********************
-	public static final BlockEntry<ShaftlessCogWheel> SHAFTLESS_COGWHEEL = REGISTRATE
-			.block("shaftless_cogwheel", (p) -> new ShaftlessCogWheel(false, p))
-			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
-			.properties(p -> p.sound(SoundType.WOOD)).blockstate(($, $$) -> {
-			}).onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-			.item(CogwheelBlockItem::new).build().register();
-	
+
 	public static final BlockEntry<ShaftlessCogWheel> SHAFTLESS_OAK_COGWHEEL = REGISTRATE
 			.block("shaftless_oak_cogwheel", (p) -> new ShaftlessCogWheel(false, p))
 			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
@@ -305,13 +285,7 @@ public class AllModBlocks {
 			.item(CogwheelBlockItem::new).build().register();
 
 	// **********************large shaftless cogwheels**********************
-	public static final BlockEntry<ShaftlessCogWheel> LARGE_SHAFTLESS_COGWHEEL = REGISTRATE
-			.block("large_shaftless_cogwheel", (p) -> new ShaftlessCogWheel(true, p))
-			.initialProperties(SharedProperties::stone).properties(p -> p.sound(SoundType.WOOD))
-			.transform(BlockStressDefaults.setNoImpact()).blockstate(($, $$) -> {
-			}).onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-			.item(CogwheelBlockItem::new).build().register();
-	
+
 	public static final BlockEntry<ShaftlessCogWheel> LARGE_SHAFTLESS_OAK_COGWHEEL = REGISTRATE
 			.block("large_shaftless_oak_cogwheel", (p) -> new ShaftlessCogWheel(true, p))
 			.initialProperties(SharedProperties::stone).properties(p -> p.sound(SoundType.WOOD))
@@ -388,8 +362,7 @@ public class AllModBlocks {
 	public static final BlockEntry<BracketBlock> WARPED_BRACKET = REGISTRATE.block("warped_bracket", BracketBlock::new)
 			.blockstate(new BracketGenerator("warped")::generate).item(BracketBlockItem::new)
 			.transform(BracketGenerator.itemModel("warped")).register();
-	// ********************************************biome o'
-	// plenty********************************************
+	// ********************************************biome o'plenty********************************************
 	// **********************small cogwheels**********************
 	public static final BlockEntry<CogWheel> CHERRY_COGWHEEL = BOP_REGISTRATE
 			.block("cherry_cogwheel", (p) -> new CogWheel(false, p)).initialProperties(SharedProperties::stone)
@@ -910,151 +883,147 @@ public class AllModBlocks {
 			.item(BracketBlockItem::new).transform(BracketGenerator.itemModel("willow")).register();
 
 	public static void register() {
-
-		Create.registrate().addToSection(OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(BIRCH_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(JUNGLE_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(ACACIA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(DARK_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(CRIMSON_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(WARPED_COGWHEEL, AllSections.KINETICS);
 		
-		Create.registrate().addToSection(LARGE_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_BIRCH_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_JUNGLE_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_ACACIA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_DARK_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_CRIMSON_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_WARPED_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(BIRCH_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(JUNGLE_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(ACACIA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(DARK_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(CRIMSON_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(WARPED_COGWHEEL, AllSections.KINETICS);
 
-		Create.registrate().addToSection(HALF_SHAFT_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_BIRCH_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_JUNGLE_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_ACACIA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_DARK_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_CRIMSON_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_WARPED_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_BIRCH_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_JUNGLE_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_ACACIA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_DARK_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_CRIMSON_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_WARPED_COGWHEEL, AllSections.KINETICS);
 
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_BIRCH_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_JUNGLE_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_ACACIA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_DARK_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_CRIMSON_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_WARPED_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_BIRCH_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_JUNGLE_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_ACACIA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_DARK_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_CRIMSON_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_WARPED_COGWHEEL, AllSections.KINETICS);
 
-		Create.registrate().addToSection(SHAFTLESS_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_BIRCH_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_JUNGLE_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_ACACIA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_DARK_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_CRIMSON_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_WARPED_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_BIRCH_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_JUNGLE_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_ACACIA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_DARK_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_CRIMSON_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_WARPED_COGWHEEL, AllSections.KINETICS);
 
-		Create.registrate().addToSection(LARGE_SHAFTLESS_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_BIRCH_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_JUNGLE_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_ACACIA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_DARK_OAK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_CRIMSON_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_WARPED_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_BIRCH_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_JUNGLE_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_ACACIA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_DARK_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_CRIMSON_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_WARPED_COGWHEEL, AllSections.KINETICS);
 
-		Create.registrate().addToSection(OAK_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(SPRUCE_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(JUNGLE_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(ACACIA_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(DARK_OAK_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(CRIMSON_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(WARPED_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_BIRCH_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_JUNGLE_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_ACACIA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_DARK_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_CRIMSON_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_WARPED_COGWHEEL, AllSections.KINETICS);
 
-		Create.registrate().addToSection(CHERRY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(DEAD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(FIR_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HELLBARK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(JACARANDA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(MAGIC_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(MAHOGANY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(PALM_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(REDWOOD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(UMBRAN_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(WILLOW_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(OAK_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(SPRUCE_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(JUNGLE_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(ACACIA_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(DARK_OAK_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(CRIMSON_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(WARPED_BRACKET, AllSections.KINETICS);
 
-		Create.registrate().addToSection(LARGE_CHERRY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_DEAD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_FIR_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HELLBARK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_JACARANDA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_MAGIC_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_MAHOGANY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_PALM_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_REDWOOD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_UMBRAN_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_WILLOW_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(CHERRY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(DEAD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(FIR_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HELLBARK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(JACARANDA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(MAGIC_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(MAHOGANY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(PALM_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(REDWOOD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(UMBRAN_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(WILLOW_COGWHEEL, AllSections.KINETICS);
 
-		Create.registrate().addToSection(HALF_SHAFT_CHERRY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_DEAD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_FIR_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_HELLBARK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_JACARANDA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_MAGIC_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_MAHOGANY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_PALM_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_REDWOOD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_UMBRAN_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(HALF_SHAFT_WILLOW_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_CHERRY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_DEAD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_FIR_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HELLBARK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_JACARANDA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_MAGIC_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_MAHOGANY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_PALM_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_REDWOOD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_UMBRAN_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_WILLOW_COGWHEEL, AllSections.KINETICS);
 
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_CHERRY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_DEAD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_FIR_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_HELLBARK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_JACARANDA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_MAGIC_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_MAHOGANY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_PALM_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_REDWOOD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_UMBRAN_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_HALF_SHAFT_WILLOW_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_CHERRY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_DEAD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_FIR_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_HELLBARK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_JACARANDA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_MAGIC_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_MAHOGANY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_PALM_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_REDWOOD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_UMBRAN_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(HALF_SHAFT_WILLOW_COGWHEEL, AllSections.KINETICS);
 
-		Create.registrate().addToSection(SHAFTLESS_CHERRY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_DEAD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_FIR_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_HELLBARK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_JACARANDA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_MAGIC_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_MAHOGANY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_PALM_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_REDWOOD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_UMBRAN_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(SHAFTLESS_WILLOW_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_CHERRY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_DEAD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_FIR_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_HELLBARK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_JACARANDA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_MAGIC_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_MAHOGANY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_PALM_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_REDWOOD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_UMBRAN_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_WILLOW_COGWHEEL, AllSections.KINETICS);
 
-		Create.registrate().addToSection(LARGE_SHAFTLESS_CHERRY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_DEAD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_FIR_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_HELLBARK_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_JACARANDA_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_MAGIC_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_MAHOGANY_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_PALM_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_REDWOOD_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_UMBRAN_COGWHEEL, AllSections.KINETICS);
-		Create.registrate().addToSection(LARGE_SHAFTLESS_WILLOW_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_CHERRY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_DEAD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_FIR_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_HELLBARK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_JACARANDA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_MAGIC_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_MAHOGANY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_PALM_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_REDWOOD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_UMBRAN_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(SHAFTLESS_WILLOW_COGWHEEL, AllSections.KINETICS);
+
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_CHERRY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_DEAD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_FIR_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_HELLBARK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_JACARANDA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_MAGIC_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_MAHOGANY_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_PALM_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_REDWOOD_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_UMBRAN_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_WILLOW_COGWHEEL, AllSections.KINETICS);
 
 		// ***********************bracket******************************
-		Create.registrate().addToSection(CHERRY_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(DEAD_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(FIR_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(HELLBARK_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(JACARANDA_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(MAGIC_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(MAHOGANY_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(PALM_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(REDWOOD_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(UMBRAN_BRACKET, AllSections.KINETICS);
-		Create.registrate().addToSection(WILLOW_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(CHERRY_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(DEAD_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(FIR_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(HELLBARK_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(JACARANDA_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(MAGIC_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(MAHOGANY_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(PALM_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(REDWOOD_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(UMBRAN_BRACKET, AllSections.KINETICS);
+		REGISTRATE.addToSection(WILLOW_BRACKET, AllSections.KINETICS);
 
 	}
 
