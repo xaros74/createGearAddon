@@ -17,7 +17,7 @@
 	"item.creategearaddon.incomplete_crimson_cogwheel": "Incomplete crimson cogwheel",
 	"item.creategearaddon.incomplete_warped_cogwheel": "Incomplete warped cogwheel",
 
-	"block.create.large_cogwheel": "Large spruce cogwheel",
+	"block.creategearaddon.half_shaft_spruce_cogwheel": "Half shaft spruce cogwheel",
 	"block.creategearaddon.half_shaft_oak_cogwheel": "Half shaft oak cogwheel",
 	"block.creategearaddon.half_shaft_birch_cogwheel": "Half shaft birch cogwheel",
 	"block.creategearaddon.half_shaft_jungle_cogwheel": "Half shaft jungle cogwheel",
@@ -26,7 +26,7 @@
 	"block.creategearaddon.half_shaft_crimson_cogwheel": "Half shaft crimson cogwheel",
 	"block.creategearaddon.half_shaft_warped_cogwheel": "Half shaft warped cogwheel",
 
-	"item.create.incomplete_large_cogwheel": "Incomplete large spruce cogwheel",
+	"item.creategearaddon.incomplete_half_shaft_spruce_cogwheel": "Incomplete half shaft spruce cogwheel",
 	"item.creategearaddon.incomplete_half_shaft_oak_cogwheel": "Incomplete half shaft oak cogwheel",
 	"item.creategearaddon.incomplete_half_shaft_birch_cogwheel": "Incomplete half shaft birch cogwheel",
 	"item.creategearaddon.incomplete_half_shaft_jungle_cogwheel": "Incomplete half shaft jungle cogwheel",
@@ -35,6 +35,7 @@
 	"item.creategearaddon.incomplete_half_shaft_crimson_cogwheel": "Incomplete half shaft crimson cogwheel",
 	"item.creategearaddon.incomplete_half_shaft_warped_cogwheel": "Incomplete half shaft warped cogwheel",
 
+	"block.creategearaddon.shaftless_spruce_cogwheel": "Shaftless spruce cogwheel",
 	"block.creategearaddon.shaftless_oak_cogwheel": "Shaftless oak cogwheel",
 	"block.creategearaddon.shaftless_birch_cogwheel": "Shaftless birch cogwheel",
 	"block.creategearaddon.shaftless_jungle_cogwheel": "Shaftless jungle cogwheel",
@@ -43,6 +44,7 @@
 	"block.creategearaddon.shaftless_crimson_cogwheel": "Shaftless crimson cogwheel",
 	"block.creategearaddon.shaftless_warped_cogwheel": "Shaftless warped cogwheel",
 
+	"block.create.large_cogwheel": "Large spruce cogwheel",
 	"block.creategearaddon.large_oak_cogwheel": "Large oak cogwheel",
 	"block.creategearaddon.large_birch_cogwheel": "Large birch cogwheel",
 	"block.creategearaddon.large_jungle_cogwheel": "Large jungle cogwheel",
@@ -51,6 +53,7 @@
 	"block.creategearaddon.large_crimson_cogwheel": "Large crimson cogwheel",
 	"block.creategearaddon.large_warped_cogwheel": "Large warped cogwheel",
 	
+	"item.create.incomplete_large_cogwheel": "Incomplete large spruce cogwheel",
 	"item.creategearaddon.incomplete_large_oak_cogwheel": "Incomplete large oak cogwheel",
 	"item.creategearaddon.incomplete_large_birch_cogwheel": "Incomplete large birch cogwheel",
 	"item.creategearaddon.incomplete_large_jungle_cogwheel": "Incomplete large jungle cogwheel",
@@ -59,6 +62,7 @@
 	"item.creategearaddon.incomplete_large_crimson_cogwheel": "Incomplete large crimson cogwheel",
 	"item.creategearaddon.incomplete_large_warped_cogwheel": "Incomplete large warped cogwheel",
 
+	"block.creategearaddon.large_half_shaft_spruce_cogwheel": "Large half shaft spruce cogwheel",
 	"block.creategearaddon.large_half_shaft_oak_cogwheel": "Large half shaft oak cogwheel",
 	"block.creategearaddon.large_half_shaft_birch_cogwheel": "Large half shaft birch cogwheel",
 	"block.creategearaddon.large_half_shaft_jungle_cogwheel": "Large half shaft jungle cogwheel",
@@ -67,6 +71,7 @@
 	"block.creategearaddon.large_half_shaft_crimson_cogwheel": "Large half shaft crimson cogwheel",
 	"block.creategearaddon.large_half_shaft_warped_cogwheel": "Large half shaft warped cogwheel",
 
+	"item.creategearaddon.incomplete_large_half_shaft_spruce_cogwheel": "Incomplete half shaft large spruce cogwheel",
 	"item.creategearaddon.incomplete_large_half_shaft_oak_cogwheel": "Incomplete half shaft large oak cogwheel",
 	"item.creategearaddon.incomplete_large_half_shaft_birch_cogwheel": "Incomplete half shaft large birch cogwheel",
 	"item.creategearaddon.incomplete_large_half_shaft_jungle_cogwheel": "Incomplete half shaft large jungle cogwheel",
@@ -75,6 +80,7 @@
 	"item.creategearaddon.incomplete_large_half_shaft_crimson_cogwheel": "Incomplete half shaft large crimson cogwheel",
 	"item.creategearaddon.incomplete_large_half_shaft_warped_cogwheel": "Incomplete half shaft large warped cogwheel",
 
+	"block.creategearaddon.large_shaftless_spruce_cogwheel": "Large shaftless spruce cogwheel",
 	"block.creategearaddon.large_shaftless_oak_cogwheel": "Large shaftless oak cogwheel",
 	"block.creategearaddon.large_shaftless_birch_cogwheel": "Large shaftless birch cogwheel",
 	"block.creategearaddon.large_shaftless_jungle_cogwheel": "Large shaftless jungle cogwheel",
@@ -87,7 +93,7 @@
 	"block.creategearaddon.oak_bracket": "Oak bracket",
 	"block.creategearaddon.acacia_bracket": "Acacia bracket",
 	"block.creategearaddon.crimson_bracket": "Crimson bracket",
-	"block.creategearaddon.dark_oak_bracket": "Dark_oak bracket",
+	"block.creategearaddon.dark_oak_bracket": "Dark oak bracket",
 	"block.creategearaddon.jungle_bracket": "Jungle bracket",
 	"block.creategearaddon.spruce_bracket": "Spruce bracket",
 	"block.creategearaddon.warped_bracket": "Warped bracket",

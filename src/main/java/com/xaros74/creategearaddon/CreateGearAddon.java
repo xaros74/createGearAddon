@@ -57,7 +57,6 @@ public class CreateGearAddon {
 	}
 	
 	public static CreateRegistrate registrateTile() {
-		LOGGER.info("registrate simple kinetic");
 		return REGISTRATE.get();
 	}
 

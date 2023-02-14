@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SDS",
+		"DCD",
+		"SDS"
+	],
+	"key": {
+		"S": {
+			"item": "minecraft:spruce_button"
+		},
+		"C": {
+			"item": "minecraft:andesite"
+		},
+		"D": {
+			"item": "minecraft:spruce_planks"
+		}
+	},
+	"result": {
+		"item": "creategearaddon:large_half_shaft_spruce_cogwheel",
+		"count": 2
+	}
+}

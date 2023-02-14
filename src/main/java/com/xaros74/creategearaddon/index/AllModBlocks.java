@@ -132,6 +132,13 @@ public class AllModBlocks {
 			.build().register();
 
 	// **********************halfshaft cogwheels**********************
+	
+	public static final BlockEntry<HalfShaftCogWheel> HALF_SHAFT_SPRUCE_COGWHEEL = REGISTRATE
+			.block("half_shaft_spruce_cogwheel", (p) -> new HalfShaftCogWheel(false, p))
+			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
+			.properties(p -> p.sound(SoundType.WOOD)).blockstate(AllModBlocks::halfShaftGearState)
+			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
+			.build().register();
 
 	public static final BlockEntry<HalfShaftCogWheel> HALF_SHAFT_OAK_COGWHEEL = REGISTRATE
 			.block("half_shaft_oak_cogwheel", (p) -> new HalfShaftCogWheel(false, p))
@@ -184,6 +191,13 @@ public class AllModBlocks {
 
 	// **********************large halfshaft cogwheels**********************
 
+	public static final BlockEntry<HalfShaftCogWheel> LARGE_HALF_SHAFT_SPRUCE_COGWHEEL = REGISTRATE
+			.block("large_half_shaft_spruce_cogwheel", (p) -> new HalfShaftCogWheel(true, p))
+			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
+			.properties(p -> p.sound(SoundType.WOOD)).blockstate(AllModBlocks::halfShaftGearState)
+			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
+			.build().register();
+	
 	public static final BlockEntry<HalfShaftCogWheel> LARGE_HALF_SHAFT_OAK_COGWHEEL = REGISTRATE
 			.block("large_half_shaft_oak_cogwheel", (p) -> new HalfShaftCogWheel(true, p))
 			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
@@ -235,6 +249,13 @@ public class AllModBlocks {
 
 	// **********************small shaftless_ cogwheels**********************
 
+	public static final BlockEntry<ShaftlessCogWheel> SHAFTLESS_SPRUCE_COGWHEEL = REGISTRATE
+			.block("shaftless_spruce_cogwheel", (p) -> new ShaftlessCogWheel(false, p))
+			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
+			.properties(p -> p.sound(SoundType.WOOD)).blockstate(($, $$) -> {
+			}).onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
+			.item(CogwheelBlockItem::new).build().register();
+	
 	public static final BlockEntry<ShaftlessCogWheel> SHAFTLESS_OAK_COGWHEEL = REGISTRATE
 			.block("shaftless_oak_cogwheel", (p) -> new ShaftlessCogWheel(false, p))
 			.initialProperties(SharedProperties::stone).transform(BlockStressDefaults.setNoImpact())
@@ -286,6 +307,14 @@ public class AllModBlocks {
 
 	// **********************large shaftless cogwheels**********************
 
+	public static final BlockEntry<ShaftlessCogWheel> LARGE_SHAFTLESS_SPRUCE_COGWHEEL = REGISTRATE
+			.block("large_shaftless_spruce_cogwheel", (p) -> new ShaftlessCogWheel(true, p))
+			.initialProperties(SharedProperties::stone).properties(p -> p.sound(SoundType.WOOD))
+			.transform(BlockStressDefaults.setNoImpact()).blockstate(($, $$) -> {
+			}).onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
+			.item(CogwheelBlockItem::new).build().register();
+
+	
 	public static final BlockEntry<ShaftlessCogWheel> LARGE_SHAFTLESS_OAK_COGWHEEL = REGISTRATE
 			.block("large_shaftless_oak_cogwheel", (p) -> new ShaftlessCogWheel(true, p))
 			.initialProperties(SharedProperties::stone).properties(p -> p.sound(SoundType.WOOD))
@@ -900,6 +929,7 @@ public class AllModBlocks {
 		REGISTRATE.addToSection(LARGE_CRIMSON_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(LARGE_WARPED_COGWHEEL, AllSections.KINETICS);
 
+		REGISTRATE.addToSection(HALF_SHAFT_SPRUCE_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(HALF_SHAFT_OAK_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(HALF_SHAFT_BIRCH_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(HALF_SHAFT_JUNGLE_COGWHEEL, AllSections.KINETICS);
@@ -908,6 +938,7 @@ public class AllModBlocks {
 		REGISTRATE.addToSection(HALF_SHAFT_CRIMSON_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(HALF_SHAFT_WARPED_COGWHEEL, AllSections.KINETICS);
 
+		REGISTRATE.addToSection(LARGE_HALF_SHAFT_SPRUCE_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(LARGE_HALF_SHAFT_OAK_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(LARGE_HALF_SHAFT_BIRCH_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(LARGE_HALF_SHAFT_JUNGLE_COGWHEEL, AllSections.KINETICS);
@@ -916,6 +947,8 @@ public class AllModBlocks {
 		REGISTRATE.addToSection(LARGE_HALF_SHAFT_CRIMSON_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(LARGE_HALF_SHAFT_WARPED_COGWHEEL, AllSections.KINETICS);
 
+		
+		REGISTRATE.addToSection(SHAFTLESS_SPRUCE_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(SHAFTLESS_OAK_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(SHAFTLESS_BIRCH_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(SHAFTLESS_JUNGLE_COGWHEEL, AllSections.KINETICS);
@@ -924,6 +957,8 @@ public class AllModBlocks {
 		REGISTRATE.addToSection(SHAFTLESS_CRIMSON_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(SHAFTLESS_WARPED_COGWHEEL, AllSections.KINETICS);
 
+		
+		REGISTRATE.addToSection(LARGE_SHAFTLESS_SPRUCE_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(LARGE_SHAFTLESS_OAK_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(LARGE_SHAFTLESS_BIRCH_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(LARGE_SHAFTLESS_JUNGLE_COGWHEEL, AllSections.KINETICS);

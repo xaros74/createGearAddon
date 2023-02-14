@@ -161,6 +161,10 @@ public class AllModItems {
 	
 	// **************************half shaft cogwheels**************************
 	
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_HALF_SHAFT_SPRUCE_COGWHEEL = REGISTRATE
+			.item("incomplete_half_shaft_spruce_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+	
 	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_HALF_SHAFT_OAK_COGWHEEL = REGISTRATE
 			.item("incomplete_half_shaft_oak_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
 			.register();
@@ -235,6 +239,11 @@ public class AllModItems {
 	
 
 	// **************************large half shaft cogwheels**************************
+	
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_LARGE_HALF_SHAFT_SPRUCE_COGWHEEL = REGISTRATE
+			.item("incomplete_large_half_shaft_spruce_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
+			.register();
+	
 	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_LARGE_HALF_SHAFT_OAK_COGWHEEL = REGISTRATE
 			.item("incomplete_large_half_shaft_oak_cogwheel", SequencedAssemblyItem::new).model(AssetLookup.existingItemModel())
 			.register();
@@ -351,6 +360,7 @@ public class AllModItems {
 		REGISTRATE.addToSection(INCOMPLETE_LARGE_WILLOW_COGWHEEL, AllSections.MATERIALS);
 		
 		
+		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_SPRUCE_COGWHEEL, AllSections.MATERIALS);
 		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_OAK_COGWHEEL, AllSections.MATERIALS);
 		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_BIRCH_COGWHEEL, AllSections.MATERIALS);
 		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_JUNGLE_COGWHEEL, AllSections.MATERIALS);
@@ -372,6 +382,7 @@ public class AllModItems {
 		REGISTRATE.addToSection(INCOMPLETE_HALF_SHAFT_WILLOW_COGWHEEL, AllSections.MATERIALS);
 		
 
+		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_SPRUCE_COGWHEEL, AllSections.MATERIALS);
 		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_OAK_COGWHEEL, AllSections.MATERIALS);
 		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_BIRCH_COGWHEEL, AllSections.MATERIALS);
 		REGISTRATE.addToSection(INCOMPLETE_LARGE_HALF_SHAFT_JUNGLE_COGWHEEL, AllSections.MATERIALS);
