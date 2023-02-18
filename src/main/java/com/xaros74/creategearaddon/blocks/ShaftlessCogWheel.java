@@ -14,7 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ShaftlessCogWheel extends CogWheel implements ShapeUtil{
+public class ShaftlessCogWheel extends CogWheel implements ShapeUtil {
 	private final VoxelShape SMALL_SHAFTLESS_COGWHEEL_SHAPE = cuboid(2, 6, 2, 14, 10, 14),
 			LARGE_SHAFTLESS_COGWHEEL_SHAPE = cuboid(0, 6, 0, 16, 10, 16);
 	private final VoxelShaper SMALL_SHAFTLESS_COGWHEEL = shape(SMALL_SHAFTLESS_COGWHEEL_SHAPE).forAxis(),

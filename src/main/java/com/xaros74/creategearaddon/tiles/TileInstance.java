@@ -40,7 +40,7 @@ public class TileInstance extends BracketedKineticTileInstance {
 	@Override
 	public void init() {
 		super.init();
-		if (!ICogWheel.isLargeCog(blockEntity.getBlockState()))
+		if (ICogWheel.isLargeCog(blockEntity.getBlockState()))
 			return;
 
 		// Large cogs sometimes have to offset their teeth by 11.25 degrees in order to

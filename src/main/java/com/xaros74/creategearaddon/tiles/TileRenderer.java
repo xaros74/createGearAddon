@@ -12,7 +12,7 @@ import com.simibubi.create.foundation.utility.AnimationTickHolder;
 
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider.Context;
+import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.Axis;
@@ -20,7 +20,7 @@ import net.minecraft.core.Direction.AxisDirection;
 
 public class TileRenderer extends BracketedKineticTileRenderer {
 
-	public TileRenderer(Context context) {
+	public TileRenderer(BlockEntityRendererProvider.Context context) {
 		super(context);
 		// TODO Auto-generated constructor stub
 	}
