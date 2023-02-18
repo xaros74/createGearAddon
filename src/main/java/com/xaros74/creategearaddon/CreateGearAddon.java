@@ -9,9 +9,13 @@ import com.xaros74.creategearaddon.groups.GearAddon;
 import com.xaros74.creategearaddon.index.AllModBlocks;
 import com.xaros74.creategearaddon.index.AllModItems;
 import com.xaros74.creategearaddon.index.AllModTileEntities;
+import com.xaros74.creategearaddon.index.ECPartials;
 import com.xaros74.creategearaddon.ponder.Ponder;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -36,6 +40,9 @@ public class CreateGearAddon {
 		AllModItems.register();
 		AllModTileEntities.register();
 		
+		DistExecutor.unsafeRunWhenOn(Dist.CLIENT,
+                () -> ECPartials::init);
+		
 		// Register the doClientStuff method for modloading
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
@@ -43,6 +50,7 @@ public class CreateGearAddon {
 
 	private void doClientStuff(final FMLClientSetupEvent event) {
 		event.enqueueWork(Ponder::register);
+		ECPartials.init();
 	}
 
 	public static CreateRegistrate registrate(String type) {
@@ -58,6 +66,10 @@ public class CreateGearAddon {
 	
 	public static CreateRegistrate registrateTile() {
 		return REGISTRATE.get();
+	}
+
+	public static ResourceLocation asResource(String path) {
+		return new ResourceLocation(MODID, path);
 	}
 
 }

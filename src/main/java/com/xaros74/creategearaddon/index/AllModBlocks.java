@@ -1,5 +1,7 @@
 package com.xaros74.creategearaddon.index;
 
+import static com.simibubi.create.AllTags.axeOrPickaxe;
+
 import com.simibubi.create.content.AllSections;
 import com.simibubi.create.content.contraptions.fluids.pipes.BracketBlock;
 import com.simibubi.create.content.contraptions.fluids.pipes.BracketBlockItem;
@@ -24,8 +26,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
-
-import static com.simibubi.create.AllTags.axeOrPickaxe;
 
 public class AllModBlocks {
 	private static final CreateRegistrate REGISTRATE = CreateGearAddon.registrate();
@@ -85,49 +85,49 @@ public class AllModBlocks {
 	// **********************large cogwheels**********************
 
 	public static final BlockEntry<CogWheel> LARGE_OAK_COGWHEEL = REGISTRATE
-			.block("large_oak_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_oak_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_OAK_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_BIRCH_COGWHEEL = REGISTRATE
-			.block("large_birch_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_birch_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_BIRCH_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_JUNGLE_COGWHEEL = REGISTRATE
-			.block("large_jungle_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_jungle_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_JUNGLE_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_ACACIA_COGWHEEL = REGISTRATE
-			.block("large_acacia_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_acacia_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_ACACIA_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.transform(BlockStressDefaults.setNoImpact()).transform(axeOrPickaxe())
 			.properties(p -> p.sound(SoundType.WOOD)).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_DARK_OAK_COGWHEEL = REGISTRATE
-			.block("large_dark_oak_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_dark_oak_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_DARK_OAK_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_CRIMSON_COGWHEEL = REGISTRATE
-			.block("large_crimson_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_crimson_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_CRIMSON_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_WARPED_COGWHEEL = REGISTRATE
-			.block("large_warped_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_warped_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_WARPED_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
@@ -408,8 +408,7 @@ public class AllModBlocks {
 	public static final BlockEntry<BracketBlock> WARPED_BRACKET = REGISTRATE.block("warped_bracket", BracketBlock::new)
 			.blockstate(new BracketGenerator("warped")::generate).item(BracketBlockItem::new)
 			.transform(BracketGenerator.itemModel("warped")).register();
-	// ********************************************biome
-	// o'plenty********************************************
+	// ********************************************biome o'plenty********************************************
 	// **********************small cogwheels**********************
 	public static final BlockEntry<CogWheel> CHERRY_COGWHEEL = BOP_REGISTRATE
 			.block("cherry_cogwheel", (p) -> new CogWheel(false, p)).initialProperties(SharedProperties::stone)
@@ -491,77 +490,77 @@ public class AllModBlocks {
 	// **********************large cogwheels**********************
 
 	public static final BlockEntry<CogWheel> LARGE_CHERRY_COGWHEEL = BOP_REGISTRATE
-			.block("large_cherry_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_cherry_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_CHERRY_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.transform(BlockStressDefaults.setNoImpact()).transform(axeOrPickaxe())
 			.properties(p -> p.sound(SoundType.WOOD)).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_DEAD_COGWHEEL = BOP_REGISTRATE
-			.block("large_dead_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_dead_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_DEAD_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_FIR_COGWHEEL = BOP_REGISTRATE
-			.block("large_fir_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_fir_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_FIR_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_HELLBARK_COGWHEEL = BOP_REGISTRATE
-			.block("large_hellbark_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_hellbark_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_HELLBARK_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_JACARANDA_COGWHEEL = BOP_REGISTRATE
-			.block("large_jacaranda_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_jacaranda_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_JACARANDA_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_MAGIC_COGWHEEL = BOP_REGISTRATE
-			.block("large_magic_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_magic_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_MAGIC_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_MAHOGANY_COGWHEEL = BOP_REGISTRATE
-			.block("large_mahogany_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_mahogany_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_MAHOGANY_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_PALM_COGWHEEL = BOP_REGISTRATE
-			.block("large_palm_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_palm_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_PALM_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_REDWOOD_COGWHEEL = BOP_REGISTRATE
-			.block("large_redwood_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_redwood_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_REDWOOD_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_UMBRAN_COGWHEEL = BOP_REGISTRATE
-			.block("large_umbran_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_umbran_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_UMBRAN_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
 			.build().register();
 
 	public static final BlockEntry<CogWheel> LARGE_WILLOW_COGWHEEL = BOP_REGISTRATE
-			.block("large_willow_cogwheel", (p) -> new CogWheel(true, p)).initialProperties(SharedProperties::stone)
+			.block("large_willow_cogwheel", (p) -> new CogWheel(true, p, ECPartials.LARGE_WILLOW_COGWHEEL)).initialProperties(SharedProperties::stone)
 			.properties(p -> p.sound(SoundType.WOOD)).transform(BlockStressDefaults.setNoImpact())
 			.transform(axeOrPickaxe()).blockstate(BlockStateGen.axisBlockProvider(false))
 			.onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new)).item(CogwheelBlockItem::new)
@@ -961,13 +960,13 @@ public class AllModBlocks {
 		REGISTRATE.addToSection(CRIMSON_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(WARPED_COGWHEEL, AllSections.KINETICS);
 
-//		REGISTRATE.addToSection(LARGE_OAK_COGWHEEL, AllSections.KINETICS);
-//		REGISTRATE.addToSection(LARGE_BIRCH_COGWHEEL, AllSections.KINETICS);
-//		REGISTRATE.addToSection(LARGE_JUNGLE_COGWHEEL, AllSections.KINETICS);
-//		REGISTRATE.addToSection(LARGE_ACACIA_COGWHEEL, AllSections.KINETICS);
-//		REGISTRATE.addToSection(LARGE_DARK_OAK_COGWHEEL, AllSections.KINETICS);
-//		REGISTRATE.addToSection(LARGE_CRIMSON_COGWHEEL, AllSections.KINETICS);
-//		REGISTRATE.addToSection(LARGE_WARPED_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_BIRCH_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_JUNGLE_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_ACACIA_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_DARK_OAK_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_CRIMSON_COGWHEEL, AllSections.KINETICS);
+		REGISTRATE.addToSection(LARGE_WARPED_COGWHEEL, AllSections.KINETICS);
 
 		REGISTRATE.addToSection(HALF_SHAFT_SPRUCE_COGWHEEL, AllSections.KINETICS);
 		REGISTRATE.addToSection(HALF_SHAFT_OAK_COGWHEEL, AllSections.KINETICS);
